@@ -1,0 +1,6 @@
+"Euclidean" "Jaccard" "BurrowsDelta" "EdersSimple" "Cosine" "CosineDelta" "EdersDelta" "ArgamonsDelta" "t-SNE"
+"810MenexMFW" 0 0 0 0 0 0 0 0 0
+"500MenexMFW" 0 0 0 0 0 3 0 0 0
+"300MenexMFW" 0 0 0 1 0 0 0 1 0
+"200MenexMFW" 0 0 0 0 0 5 0 0 0
+"100MenexMFW" 0 0 0 0 0 1 0 0 0

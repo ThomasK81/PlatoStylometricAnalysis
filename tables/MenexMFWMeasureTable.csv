@@ -1,0 +1,6 @@
+"Euclidean" "Jaccard" "BurrowsDelta" "EdersSimple" "Cosine" "CosineDelta" "EdersDelta" "ArgamonsDelta" "t-SNE"
+"810MenexMFW" 75.25 75.12 73.88 77.5 74.5 76.62 77.25 73.12 72.75
+"500MenexMFW" 75.5 75.62 76.12 78.75 74.5 76.88 77.5 75.75 72.25
+"300MenexMFW" 75.75 75.62 76.88 77.88 75.5 76.75 77.75 76.25 73.5
+"200MenexMFW" 75.38 75.62 77.75 78.38 74.38 78 77.88 76.75 72.12
+"100MenexMFW" 74.75 74.88 78.12 78.75 75.5 78 77.62 76.38 71.62
