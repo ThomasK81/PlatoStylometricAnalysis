@@ -15,8 +15,7 @@ Data for the stylometric analysis of the _Corpus Platonicum_, with a special emp
 
 ### Copyright
 As soon as the article is accepted, I will also make this repository available on Zenodo and it will receive a DOI.
-The copright is &copy;2017-2018 Thomas Koentges
-Open licenses:
+The copright is &copy;2017-2018 Thomas Koentges, but I use open licenses, so feel free to use it:
 - MIT for the R-Script
 - CC-BY for all images and text (unless otherwise specified)
 
