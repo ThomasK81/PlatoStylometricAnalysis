@@ -1,0 +1,801 @@
+ShortID,LSJAuthor,Worktitle,LSJAbbreviation,OCDAuthor,OCDWork
+stoa0033a_tlg028,pseudo-Aristotle,De mundo,NA,ps.-Arist.,[Mund.]
+stoa0033a_tlg043,pseudo-Aristotle,De spiritu,NA,ps.-Arist.,DeSpiritu
+stoa0121_stoa001,Eutropius,Breviarium historiae romanae,NA,Eutr.,Eutr.
+stoa0146d_stoa001,Hegemonius,Acta Archelai,NA,Hegemonius,ActaArchelai
+tlg0003_tlg001,Thucydides,Historiae,Th.,Thuc.,Thuc.
+tlg0007_tlg001,Plutarchus Biographus et Philosophus,Theseus,Plu.Thes.,Plu.,Thes.
+tlg0007_tlg002,Plutarchus Biographus et Philosophus,Romulus,Plu.Rom.,Plu.,Rom.
+tlg0007_tlg004,Plutarchus Biographus et Philosophus,Lycurgus,Plu.Lyc.,Plu.,Lyc.
+tlg0007_tlg005,Plutarchus Biographus et Philosophus,Numa,Plu.Num.,Plu.,Num.
+tlg0007_tlg006,Plutarchus Biographus et Philosophus,Comparatio Lycurgi et Numae,Plu.Comp.Lyc.Num.,Plu.,Comp.Lyc.Num.
+tlg0007_tlg007,Plutarchus Biographus et Philosophus,Solon,Plu.Sol.,Plu.,Sol.
+tlg0007_tlg008,Plutarchus Biographus et Philosophus,Publicola,Plu.Publ.,Plu.,Publ.
+tlg0007_tlg010,Plutarchus Biographus et Philosophus,Themistocles,Plu.Them.,Plu.,Them.
+tlg0007_tlg011,Plutarchus Biographus et Philosophus,Camillus,Plu.Cam.,Plu.,Cam.
+tlg0007_tlg012,Plutarchus Biographus et Philosophus,Pericles,Plu.Per.,Plu.,Per.
+tlg0007_tlg013,Plutarchus Biographus et Philosophus,Fabius Maximus,Plu.Fab.,Plu.,Fab.
+tlg0007_tlg015,Plutarchus Biographus et Philosophus,Alcibiades,Plu.Alc.,Plu.,Alc.
+tlg0007_tlg016,Plutarchus Biographus et Philosophus,Marcius Coriolanus,Plu.Cor.,Plu.,Cor.
+tlg0007_tlg018,Plutarchus Biographus et Philosophus,Timoleon,Plu.Tim.,Plu.,Tim.
+tlg0007_tlg019,Plutarchus Biographus et Philosophus,Aemilius Paullus,Plu.Aem.,Plu.,Aem.
+tlg0007_tlg021,Plutarchus Biographus et Philosophus,Pelopidas,Plu.Pel.,Plu.,Pel.
+tlg0008_tlg001,Athenaeus Grammaticus,Deipnosophistae,none,AthenaeusGrammaticus,Deipnosophistae
+tlg0010_tlg002,Isocrates Orator,Against Callimachus / In Callimachum (orat. 18),Isoc. 18,Isoc.,18
+tlg0010_tlg004,Isocrates Orator,On the team of horses / De bigis (orat. 16),Isoc. 16,Isoc.,16
+tlg0010_tlg005,Isocrates Orator,Trapeziticus (Orat. 17),Isoc. 17,Isoc.,17
+tlg0010_tlg006,Isocrates Orator,Aegineticus (Orat. 19),Isoc. 19,Isoc.,19
+tlg0010_tlg007,Isocrates Orator,To Demonicus / Ad Demonicum (orat. 1),Isoc. 1,Isoc.,1
+tlg0010_tlg009,Isocrates Orator,Helen / Helenae encomium (orat. 10),Isoc. 10,Isoc.,10
+tlg0010_tlg010,Isocrates Orator,Busiris (Orat. 11),Isoc. 11,Isoc.,Bus.
+tlg0010_tlg011,Isocrates Orator,Panegyricus (Orat. 4),Isoc. 4,Isoc.,Paneg.
+tlg0010_tlg012,Isocrates Orator,Plataicus (Orat. 14),Isoc. 14,Isoc.,14
+tlg0010_tlg013,Isocrates Orator,To Nicocles (Ad Nicoclem (orat. 2)),Isoc. 2,Isoc.,2
+tlg0010_tlg014,Isocrates Orator,Nicocles or the Cyprians (Orat. 3),Isoc. 3,Isoc.,3
+tlg0010_tlg015,Isocrates Orator,Evagoras (Orat. 9),Isoc. 9,Isoc.,9
+tlg0010_tlg016,Isocrates Orator,Archidamus (Orat. 6),Isoc. 6,Isoc.,6
+tlg0010_tlg017,Isocrates Orator,On the Peace / De Pace (Orat. 8),Isoc. 8,Isoc.,8
+tlg0010_tlg018,Isocrates Orator,Areopagiticus (Orat. 7),Isoc. 7,Isoc.,7
+tlg0010_tlg019,Isocrates Orator,Antidosis (Orat. 15),Isoc. 15,Isoc.,Antid.
+tlg0010_tlg020,Isocrates Orator,To Philip / Philippus (orat. 5),Isoc. 5,Isoc.,5
+tlg0010_tlg021,Isocrates Orator,Panathenaicus (Orat. 12),Isoc. 12,Isoc.,Panath.
+tlg0014_tlg002,Demosthenes Orator,Olynthiac 1 \ Olynthiaca 2,none,Dem.,Olynthiac1Olynthiaca2
+tlg0014_tlg003,Demosthenes Orator,Olynthiac 3 \ Olynthiaca 3,none,Dem.,Olynthiaca3
+tlg0014_tlg004,Demosthenes Orator,Philippic 1 \ Philippica 1,none,Dem.,Philippica1
+tlg0015_tlg001,Herodianus Historicus,Ab excessu divi Marci,Hdn.,Hdn.,Hdn.
+tlg0016_tlg001,Herodotus Historicus,Historiae,none,Hdt.,Hdt.
+tlg0018_tlg001,Philo Judaeus,De Opificio Mundi,Ph.,Philo,De Opificio Mundi
+tlg0018_tlg002,Philo Judaeus,Legum allegoriarum libri I-iii,Ph.,Philo,Legum allegoriarum libri I-iii
+tlg0018_tlg003,Philo Judaeus,De cherubim,Ph.,Philo,De cherubim
+tlg0018_tlg004,Philo Judaeus,De sacrificiis Abelis et Caini,Ph.,Philo,De sacrificiis Abelis et Caini
+tlg0018_tlg005,Philo Judaeus,Quod deterius potiori insidiari soleat,Ph.,Philo,Quod deterius potiori insidiari soleat
+tlg0018_tlg006,Philo Judaeus,De posteritate Caini,Ph.,Philo,De posteritate Caini
+tlg0018_tlg007,Philo Judaeus,De gigantibus,Ph.,Philo,De gigantibus
+tlg0018_tlg008,Philo Judaeus,Quod deus sit immutabilis,Ph.,Philo,Quod deus sit immutabilis
+tlg0018_tlg009,Philo Judaeus,De agricultura,Ph.,Philo,De agricultura
+tlg0018_tlg010,Philo Judaeus,De plantatione,Ph.,Philo,De plantatione
+tlg0018_tlg011,Philo Judaeus,De ebrietate,Ph.,Philo,De ebrietate
+tlg0018_tlg012,Philo Judaeus,De sobrietate,Ph.,Philo,De sobrietate
+tlg0018_tlg013,Philo Judaeus,De confusione linguarum,Ph.,Philo,De confusione linguarum
+tlg0018_tlg014,Philo Judaeus,De migratione Abrahami,Ph.,Philo,De migratione Abrahami
+tlg0018_tlg015,Philo Judaeus,Quis rerum divinarum heres sit,Ph.,Philo,Quis rerum divinarum heres sit
+tlg0018_tlg016,Philo Judaeus,De congressu eruditionis gratia,Ph.,Philo,De congressu eruditionis gratia
+tlg0018_tlg017,Philo Judaeus,De fuga et inventione,Ph.,Philo,De fuga et inventione
+tlg0018_tlg018,Philo Judaeus,De mutatione nominum,Ph.,Philo,De mutatione nominum
+tlg0018_tlg019,Philo Judaeus,De somniis (lib. i‑ii),Ph.,Philo,De somniis (lib. i‑ii)
+tlg0018_tlg020,Philo Judaeus,De Abrahamo,Ph.,Philo,De Abrahamo
+tlg0018_tlg021,Philo Judaeus,De Josepho,Ph.,Philo,De Josepho
+tlg0018_tlg022,Philo Judaeus,De vita Mosis (lib. i‑ii),Ph.,Philo,De vita Mosis (lib. i‑ii)
+tlg0018_tlg023,Philo Judaeus,De decalogo,Ph.,Philo,De decalogo
+tlg0018_tlg024,Philo Judaeus,De specialibus legibus (lib. i‑iv),Ph.,Philo,De specialibus legibus (lib. i‑iv)
+tlg0018_tlg025,Philo Judaeus,De virtutibus,Ph.,Philo,De virtutibus
+tlg0018_tlg026,Philo Judaeus,De praemiis et poenis + De exsecrationibus,Ph.,Philo,De praemiis et poenis + De exsecrationibus
+tlg0018_tlg027,Philo Judaeus,Quod omnis probus liber sit,Ph.,Philo,Quod omnis probus liber sit
+tlg0018_tlg028,Philo Judaeus,De vita contemplativa,Ph.,Philo,DeVitaContemplativa
+tlg0018_tlg029,Philo Judaeus,De aeternitate mundi,Ph.,Philo,DeAeternitateMundi
+tlg0018_tlg030,Philo Judaeus,In Flaccum,Ph.,Philo,In Flacc.
+tlg0018_tlg031,Philo Judaeus,Legatio ad Gaium,Ph.,Philo,Leg.
+tlg0028_tlg001,Antipho Orator,In Novercam,none,Antiph.,In Novercam
+tlg0028_tlg005,Antipho Orator,De caede Herodis,none,Antiph.,De caede Herodis
+tlg0031_tlg001,Novum Testamentum,Gospel according to Matthew / Evangelium secundum Matthaeum,Ev.Matt.,NT,Ev.Matt.
+tlg0031_tlg003,Novum Testamentum,Gospel according to Luke / Evangelium secundum Lucam,Ev.Luc.,NT,Ev.Luc.
+tlg0031_tlg004,Novum Testamentum,Gospel according to John / Evangelium secundum Joannem,Ev.Jo.,NT,Ev.Jo.
+tlg0031_tlg005,Novum Testamentum,Acts of the Apostles / Acta apostolorum,Act.Ap.,NT,Act.Ap.
+tlg0031_tlg006,Novum Testamentum,Epistle to the Romans / Epistula Pauli ad Romanos,Ep.Rom.,NT,Ep.Rom.
+tlg0031_tlg007,Novum Testamentum,1st Epistle to the Corinthians / Epistula Pauli ad Corinthios I,1 Ep.Cor.,NT,1Ep.Cor.
+tlg0031_tlg008,Novum Testamentum,2nd Epistle to the Corinthians / Epistula Pauli ad Corinthios ii,2 Ep.Cor.,NT,2Ep.Cor.
+tlg0031_tlg019,Novum Testamentum,Epistle to the Hebrews / Epistula Pauli ad Hebraeos,Ep.Hebr,NT,Ep.Hebr
+tlg0031_tlg027,Novum Testamentum,Apocalypse / Apocalypsis Joannis,Apoc .,NT,Apoc .
+tlg0032_tlg001,Xenophon Historicus,Historia Graeca / Hellenica,X.HG,Xen.,Hell.
+tlg0032_tlg002,Xenophon Historicus,Memorabilia Socratis,X.Mem.,Xen.,Mem.
+tlg0032_tlg003,Xenophon Historicus,Oeconomicus,X.Oec.,Xen.,Oec.
+tlg0032_tlg004,Xenophon Historicus,Symposium / Banquet / Convivium,X.Sym.,Xen.,Symp.
+tlg0032_tlg005,Xenophon Historicus,Apologia Socratis,X.Ap.,Xen.,Ap.
+tlg0032_tlg006,Xenophon Historicus,Anabasis ((Expeditio Cyri)),X.An.,Xen.,An.
+tlg0032_tlg007,Xenophon Historicus,Institutio Cyri (Cyropaedia),X.Cyr.,Xen.,Cyr.
+tlg0032_tlg008,Xenophon Historicus,Hiero,X.Hier.,Xen.,Hier.
+tlg0032_tlg009,Xenophon Historicus,Agesilaus,X. Ages.,Xen.,Ages.
+tlg0032_tlg010,Xenophon Historicus,Respublica Lacedaemoniorum / De republica Lacedaemoniorum,X.Lac.,Xen.,Lac.
+tlg0032_tlg011,Xenophon Historicus,de Vectigalibus,X.Vect.,Xen.,Vect.
+tlg0032_tlg012,Xenophon Historicus,de Equitum magistro (Hipparchicus),X.Eq.Mag.,Xen.,Eq.mag.
+tlg0032_tlg013,Xenophon Historicus,de Equitanái ratione (de re Equestri),X.Eq.,Xen.,Eq.
+tlg0032_tlg014,Xenophon Historicus,Cynegeticus,X.Cyn.,Xen.,Cyn.
+tlg0057_tlg001,Galenus Medicus,Adhortatio ad artes addiscendas (Protreptikos),Gal.Protr.,Gal.,Protreptikos
+tlg0057_tlg002,Galenus Medicus,De optima doctrina,Gal. Opt.Doctr.,Gal.,De optima doctrina
+tlg0057_tlg004,Galenus Medicus,De sectis ad eos qui introducuntur,Gal.Sect.Intr.,Gal.,De sectis ad eos qui introducuntur
+tlg0057_tlg006,Galenus Medicus,De constitutione artis medicae ad Patrophilum,none,Gal.,De constitutione artis medicae ad Patrophilum
+tlg0057_tlg007,Galenus Medicus,Ars medica,none,Gal.,Ars medica
+tlg0057_tlg008,Galenus Medicus,De elementis ex Hippocrate libri ii,none,Gal.,De elementis ex Hippocrate
+tlg0057_tlg009,Galenus Medicus,De temperamentis libri iii,Gal.Mixt.,Gal.,De temperamentis
+tlg0057_tlg010,Galenus Medicus,De naturalibus facultatibus,Gal.Nat.Fac,Gal.,De naturalibus facultatibus
+tlg0057_tlg011,Galenus Medicus,De anatomicis administrationibus libri ix,none,Gal.,De anatomicis administrationibus
+tlg0057_tlg012,Galenus Medicus,De ossibus ad tirones,none,Gal.,De ossibus ad tirones
+tlg0057_tlg013,Galenus Medicus,De venarum arteriarumque dissectione,none,Gal.,De venarum arteriarumque dissectione
+tlg0057_tlg014,Galenus Medicus,De nervorum dissectione,none,Gal.,De nervorum dissectione
+tlg0057_tlg015,Galenus Medicus,De instrumento odoratus,none,Gal.,De instrumento odoratus
+tlg0057_tlg016,Galenus Medicus,De uteri dissectione,none,Gal.,De uteri dissectione
+tlg0057_tlg017,Galenus Medicus,De usu partium,Gal.UP,Gal.,De usu partium
+tlg0057_tlg018,Galenus Medicus,De motu musculorum libri ii,none,Gal.,De motu musculorum
+tlg0057_tlg019,Galenus Medicus,De victu attenuante,Gal.Vict.Att.,Gal.,De victu attenuante
+tlg0057_tlg020,Galenus Medicus,De utilitate respirationis liber,none,Gal.,De utilitate respirationis
+tlg0057_tlg021,Galenus Medicus,De semine libri ii,none,Gal.,De semine
+tlg0057_tlg022,Galenus Medicus,De foetuum formatione libellus,none,Gal.,De foetuum formatione
+tlg0057_tlg023,Galenus Medicus,An in arteriis natura sanguis contineatur,none,Gal.,An in arteriis natura sanguis contineatur
+tlg0057_tlg024,Galenus Medicus,De optima corporis nostri constitutione,none,Gal.,De optima corporis nostri constitutione
+tlg0057_tlg027,Galenus Medicus,Quod animi mores corporis temperamenta sequantur,none,Gal.,Quod animi mores corporis temperamenta sequantur
+tlg0057_tlg028,Galenus Medicus,De propriorum animi cuiuslibet affectuum dignotione et curatione / De cognoscendis curandisque animi morbis,Gal.Anim.Pass.,Gal.,De cognoscendis curandisque animi morbis
+tlg0057_tlg029,Galenus Medicus,De animi cuiuslibet peccatorum dignotione et curatione (= De animi cuiuslibet peccatorum dignotione et medela),none,Gal.,De animi cuiuslibet peccatorum dignotione et medela
+tlg0057_tlg030,Galenus Medicus,De atra bile,none,Gal.,De atra bile
+tlg0057_tlg031,Galenus Medicus,De usu pulsuum,none,Gal.,De usu pulsuum
+tlg0057_tlg032,Galenus Medicus,De placitis Hippocratis et Platonis,none,Gal.,De placitis Hippocratis et Platonis
+tlg0057_tlg034,Galenus Medicus,De parvae pilae exercitio,Gal.Parv.Phil.,Gal.,De parvae pilae exercitio
+tlg0057_tlg036,Galenus Medicus,De sanitate tuenda libri vi,none,Gal.,De sanitate tuenda
+tlg0057_tlg038,Galenus Medicus,De rebus boni malique suci  / De probis pravisque alimentorum,none,Gal.,De rebus boni malique suci
+tlg0057_tlg039,Galenus Medicus,De ptisana,none,Gal.,De ptisana
+tlg0057_tlg041,Galenus Medicus,De morborum differentiis,none,Gal.,De morborum differentiis
+tlg0057_tlg042,Galenus Medicus,De causis morborum liber,none,Gal.,De causis morborum
+tlg0057_tlg043,Galenus Medicus,De symptomatum differentiis liber,none,Gal.,De symptomatum differentiis
+tlg0057_tlg044,Galenus Medicus,De symptomatum causis libri iii,none,Gal.,De symptomatum causis
+tlg0057_tlg045,Galenus Medicus,De differentiis febrium libri  libri iii,none,Gal.,De differentiis febrium
+tlg0057_tlg046,Galenus Medicus,De morborum temporibus liber,none,Gal.,De morborum temporibus
+tlg0057_tlg047,Galenus Medicus,De totius morbi temporibus liber,none,Gal.,De totius morbi temporibus
+tlg0057_tlg048,Galenus Medicus,De typis liber,none,Gal.,De typis
+tlg0057_tlg049,Galenus Medicus,Adversus eos qui de typis scripserunt vel de circuitibus,none,Gal.,Adversus eos qui de typis scripserunt vel de circuitibus
+tlg0057_tlg050,Galenus Medicus,De plenitudine liber,none,Gal.,De plenitudine
+tlg0057_tlg051,Galenus Medicus,"De tremore, palpitatione, convulsione et rigore liber",none,Gal.,"De tremore, palpitatione, convulsione et rigore"
+tlg0057_tlg052,Galenus Medicus,De comate secundum Hippocratem liber,none,Gal.,De comate secundum Hippocratem
+tlg0057_tlg053,Galenus Medicus,De marcore liber,none,Gal.,De marcore
+tlg0057_tlg054,Galenus Medicus,De tumoribus praeter naturam,none,Gal.,De tumoribus praeter naturam
+tlg0057_tlg055,Galenus Medicus,De inaequali intemperie liber,none,Gal.,De inaequali intemperie
+tlg0057_tlg056,Galenus Medicus,De difficultate respirationis libri iii,none,Gal.,De difficultate respirationis
+tlg0057_tlg057,Galenus Medicus,De locis affectis libri vi,none,Gal.,De loc. aff.VI
+tlg0057_tlg058,Galenus Medicus,De pulsibus libellus ad tirones,none,Gal.,De pulsibus
+tlg0057_tlg059,Galenus Medicus,De differentia pulsuum libri iv,none,Gal.,De differentia pulsuum
+tlg0057_tlg060,Galenus Medicus,De dignoscendis pulsibus libri iv,none,Gal.,De dignoscendis pulsibus
+tlg0057_tlg061,Galenus Medicus,De causis pulsuum libri iv,none,Gal.,De causis pulsuum
+tlg0057_tlg062,Galenus Medicus,De praesagitione ex pulsibus libri iv,none,Gal.,De praesagitione ex pulsibus
+tlg0057_tlg063,Galenus Medicus,Synopsis librorum suorum de pulsibus,none,Gal.,Synopsis de pulsibus
+tlg0057_tlg064,Galenus Medicus,De crisibus libri iii,none,Gal.,De crisibus
+tlg0057_tlg065,Galenus Medicus,De diebus decretoriis libri iii,none,Gal.,De diebus decretoriis
+tlg0057_tlg066,Galenus Medicus,De methodo medendi libri xiv,none,Gal.,De methodo medendi
+tlg0057_tlg067,Galenus Medicus,Ad Glauconem de medendi methodo libri ii,none,Gal.,Ad Glauconem de medendi methodo
+tlg0057_tlg068,Galenus Medicus,De venae sectione adversus Erasistratum,none,Gal.,De venae sectione adversus Erasistratum
+tlg0057_tlg069,Galenus Medicus,De venae sectione adversus Erasistrateos Romae degentes,none,Gal.,De venae sectione adversus Erasistrateos Romae degentes
+tlg0057_tlg070,Galenus Medicus,De curandi ratione per venae sectionem,none,Gal.,De curandi ratione per venae sectionem
+tlg0057_tlg072,Galenus Medicus,De purgantium medicamentorum facultate,none,Gal.,De purgantium medicamentorum facultate
+tlg0057_tlg073,Galenus Medicus,Quos quibus catharticis medicamentis et quando purgare oporteat (ap. Oribasium),none,Gal.,ap. Oribasium
+tlg0057_tlg074,Galenus Medicus,Pro puero epileptico consilium,none,Gal.,Pro puero epileptico consilium
+tlg0057_tlg075,Galenus Medicus,De simplicium medicamentorum temperamentis ac facultatibus libri xi  (Subfiguratio Empirica),Gal. Subf.Emp.,Gal.,Subfiguratio Empirica
+tlg0057_tlg076,Galenus Medicus,De compositione medicamentorum secundum locos libri x,none,Gal.,De compositione medicamentorum secundum locos
+tlg0057_tlg077,Galenus Medicus,De compositione medicamentorum per genera libri vii,none,Gal.,De compositione medicamentorum per genera
+tlg0057_tlg078,Galenus Medicus,De antidotis libri ii,none,Gal.,De antidotis
+tlg0057_tlg079,Galenus Medicus,De theriaca ad Pisonem,none,Gal.,De theriaca ad Pisonem
+tlg0057_tlg081,Galenus Medicus,Institutio logica,Gal.Inst.Log.,Gal.,Institutio logica
+tlg0057_tlg082,Galenus Medicus,De sophismatis seu captionibus penes dictionem,none,Gal.,De sophismatis seu captionibus penes dictionem
+tlg0057_tlg083,Galenus Medicus,De praenotione ad Posthumum (Epigenem),none,Gal.,De praenotione ad Posthumum (Epigenem)
+tlg0057_tlg085,Galenus Medicus,In Hippocratis de natura hominis librum commentarii iii,none,Gal.,In Hippocratis de natura hominis
+tlg0057_tlg086,Galenus Medicus,In Hippocratis vel Polybi opus de salubri victus ratione privatorum commentarius (= Galeni in Hippocratis de natura hominis commentarius tertius),none,Gal.,In Hippocratis vel Polybi opus
+tlg0057_tlg087,Galenus Medicus,In Hippocratis de victu acutorum commentaria iv,none,Gal.,In Hippocratis de victu acutorum
+tlg0057_tlg089,Galenus Medicus,In Hippocratis librum primum epidemiarum commentarii iii,none,Gal.,In Hippocratis librum primum epidemiarum
+tlg0057_tlg092,Galenus Medicus,In Hippocratis aphorismos commentarii vii,none,Gal.,In Hippocratis aphorismos
+tlg0057_tlg093,Galenus Medicus,Adversus Lycum libellus,none,Gal.,Adversus Lycum libellus
+tlg0057_tlg094,Galenus Medicus,Adversus ea quae a Juliano in Hippocratis aphorismos enuntiata sunt libellus,none,Gal.,Adversus ea quae a Juliano in Hippocratis aphorismos enuntiata
+tlg0057_tlg095,Galenus Medicus,In Hippocratis librum de articulis et Galeni in eum commentarii iv,none,Gal.,In Hippocratis librum de articulis et Galeni in eum
+tlg0057_tlg096,Galenus Medicus,De humero iis modis prolapso quos Hippocrates non vidit,none,Gal.,De humero iis modis prolapso quos Hippocrates non vidit
+tlg0057_tlg099,Galenus Medicus,In Hippocratis prognosticum commentaria iii,none,Gal.,In Hippocratis prognosticum
+tlg0057_tlg100,Galenus Medicus,In Hippocratis librum de fracturis commentarii iii,none,Gal.,In Hippocratis librum de fracturis
+tlg0057_tlg101,Galenus Medicus,In Hippocratis librum de officina medici commentarii iii,none,Gal.,In Hippocratis librum de officina medici
+tlg0057_tlg102,Galenus Medicus,De musculorum dissectione ad tirones,none,Gal.,De musculorum dissectione ad tirones
+tlg0057_tlg103,Galenus Medicus,De consuetudinibus,Gal.Consuet.,Gal.,De consuetudinibus
+tlg0059_tlg001,Plato Philosophus,Euthypro,Pl.Euthphr.,Pl.,Euthphr.
+tlg0059_tlg002,Plato Philosophus,Apologia Socratis (Apology),Pl.Ap.,Pl.,Ap.
+tlg0059_tlg003,Plato Philosophus,Crito,Pl.Cri.,Pl.,Cri.
+tlg0059_tlg004,Plato Philosophus,Phaedo,Pl.Phd.,Pl.,Phd.
+tlg0059_tlg005,Plato Philosophus,Cratylus,Pl.Cra.,Pl.,Cra.
+tlg0059_tlg006,Plato Philosophus,Theaetetus,Pl.Tht.,Pl.,Tht.
+tlg0059_tlg007,Plato Philosophus,Sophist,Pl.Sph.,Pl.,Soph.
+tlg0059_tlg008,Plato Philosophus,Politicus (Statesman),Pl.Plt.,Pl.,Plt.
+tlg0059_tlg009,Plato Philosophus,Parmenides,Pl.Prm.,Pl.,Prm.
+tlg0059_tlg010,Plato Philosophus,Philebus,Pl.Phlb.,Pl.,Phlb.
+tlg0059_tlg011,Plato Philosophus,Symposium,Pl.Smp.,Pl.,Symp.
+tlg0059_tlg012,Plato Philosophus,Phaedrus,Pl.Phdr.,Pl.,Phdr.
+tlg0059_tlg013,Plato Philosophus,Alcibiades 1,Pl.Alc.,Pl.,Alc.1
+tlg0059_tlg014,Plato Philosophus,Alcibiades 2,Pl.Alc.,Pl.,Alc.2
+tlg0059_tlg015,Plato Philosophus,Hipparchus,Pl.Hipparch.,Pl.,[Hipparch.]
+tlg0059_tlg016,Plato Philosophus,Amatores (Lovers),Pl.Amat.,Pl.,Amat.
+tlg0059_tlg017,Plato Philosophus,Theages,Pl.Thg.,Pl.,Thg.
+tlg0059_tlg018,Plato Philosophus,Charmides,Pl.Chrm.,Pl.,Chrm.
+tlg0059_tlg019,Plato Philosophus,Laches,Pl.La.,Pl.,Lach.
+tlg0059_tlg020,Plato Philosophus,Lysis,Pl.Lys.,Pl.,Lys.
+tlg0059_tlg021,Plato Philosophus,Euthydemus,Pl.Euthd.,Pl.,Euthyd.
+tlg0059_tlg022,Plato Philosophus,Protagoras,Pl.Prt.,Pl.,Prt.
+tlg0059_tlg023,Plato Philosophus,Gorgias,Pl.Grg.,Pl.,Grg.
+tlg0059_tlg024,Plato Philosophus,Meno,Pl.Men.,Pl.,Men.
+tlg0059_tlg025,Plato Philosophus,Greater Hippais (Hippias Major),Pl.Hp.Ma.,Pl.,Hp.mai.
+tlg0059_tlg026,Plato Philosophus,Lesser Hippias (Hippias Minor),Pl.Hp.Mi.,Pl.,Hp.mi.
+tlg0059_tlg027,Plato Philosophus,Ion,Pl.Ion.,Pl.,Ion
+tlg0059_tlg028,Plato Philosophus,Menexenus,Pl.Mx.,Pl.,Menex.
+tlg0059_tlg029,Plato Philosophus,Cleitophon (Clitopho),Pl.Clit.,Pl.,Clit.
+tlg0059_tlg030,Plato Philosophus,Republic (Respublica),Pl.R,Pl.,Resp.
+tlg0059_tlg031,Plato Philosophus,Timaeus,Pl.Ti.,Pl.,Ti.
+tlg0059_tlg032,Plato Philosophus,Critias,Pl.Crit.,Pl.,Crit.
+tlg0059_tlg033,Plato Philosophus,Minos,Pl.Min.,Pl.,Min.
+tlg0059_tlg034,Plato Philosophus,Laws (Leges),Pl.Lg.,Pl.,Leg.
+tlg0059_tlg035,Plato Philosophus,Epinomis,Pl.Epin.,Pl.,Epin.
+tlg0059_tlg036,Plato Philosophus,Letters (Epistulae),Pl.Ep.,Pl.,Epist.
+tlg0060_tlg001,Diodorus Siculus Historicus,Bibliotheca Historica,none,Diod. Sic.,Diod. Sic.
+tlg0062_tlg001,Lucianus Sophista,Phalaris,"Luc.Phal.1, Luc.Phal.2",Luc.,Pahl.1Phal.2
+tlg0062_tlg007,Lucianus Sophista,Nigrinus,Luc.Nigr.,Luc.,Nirgr.
+tlg0062_tlg008,Lucianus Sophista,Demonax,Luc.Demon.,Luc.,Demon.
+tlg0062_tlg009,Lucianus Sophista,De Domo,Luc.Dom.,Luc.,Dom.
+tlg0062_tlg011,Lucianus Sophista,Macrobii,Luc.Macr.,Luc.,Macr.
+tlg0062_tlg012,Lucianus Sophista,Verae Historiae,"Luc.VH 1, Luc.VH 2",Luc.,Ver. hist.
+tlg0062_tlg013,Lucianus Sophista,Calumniae non temere credundum,Luc.Cal.,Luc.,Cal.
+tlg0062_tlg015,Lucianus Sophista,Symposium,Luc.Symp.,Luc.,Symp.
+tlg0062_tlg016,Lucianus Sophista,Cataplus,Luc.Cat.,Luc.,Catapl.
+tlg0062_tlg017,Lucianus Sophista,Juppiter confutatus,Luc.JConf.,Luc.,Iupp. conf.
+tlg0062_tlg018,Lucianus Sophista,Juppiter trageodeus,Luc.JTr.,Luc.,Iupp. trag.
+tlg0062_tlg019,Lucianus Sophista,Gallus,Luc.Gall.,Luc.,Gall.
+tlg0062_tlg020,Lucianus Sophista,Prometheus,Luc.Prom.,Luc.,Prom.
+tlg0062_tlg021,Lucianus Sophista,Icaromenippus,Luc.Icar.,Luc.,Icar.
+tlg0062_tlg022,Lucianus Sophista,Timon,Luc.Tim.,Luc.,Tim.
+tlg0062_tlg023,Lucianus Sophista,Charon / Contemplantes,Luc.Cont.,Luc.,Cont.
+tlg0062_tlg024,Lucianus Sophista,Vitarum auctio,Luc. Vit.Auct.,Luc.,Vit. auct.
+tlg0062_tlg025,Lucianus Sophista,Revivescentes (Piscator),Luc.Pisc.,Luc.,Pisc.
+tlg0062_tlg026,Lucianus Sophista,Bis accusatus sive tribunalia,Luc.Bis.Acc.,Luc.,Bis.Acc.
+tlg0062_tlg027,Lucianus Sophista,De sacrificiis,Luc.Sacr.,Luc.,Sacr.
+tlg0062_tlg028,Lucianus Sophista,Adversus indoctum et libros multos ementem,Luc.Ind.,Luc.,Ind.
+tlg0062_tlg029,Lucianus Sophista,Somnium sive vita Luciani,Luc.Somn.,Luc.,Somn.
+tlg0062_tlg030,Lucianus Sophista,De parasito sive artem esse parasiticam,Luc.Par.,Luc.,Par.
+tlg0062_tlg031,Lucianus Sophista,Philopsuedes sive incredulus,Luc.Philops.,Luc.,Philops.
+tlg0062_tlg032,Lucianus Sophista,Dearum judicium,Luc.,Luc.,D.Iud.
+tlg0062_tlg033,Lucianus Sophista,De mercede conductis,Luc.Merc.Cond.,Luc.,Merc.Cond.
+tlg0062_tlg034,Lucianus Sophista,Anacharsis,Luc.Anach.,Luc.,Anach.
+tlg0062_tlg035,Lucianus Sophista,Menippus (Necyomantia),Luc.Nec.,Luc.,Nec.
+tlg0062_tlg036,Lucianus Sophista,De luctu,Luc.Luct.,Luc.,Luct.
+tlg0062_tlg037,Lucianus Sophista,Rhetorum praeceptor,Luc.Rh.Pr.,Luc.,Pr.
+tlg0062_tlg038,Lucianus Sophista,Alexander,Luc.Alex.,Luc.,Alex.
+tlg0062_tlg039,Lucianus Sophista,Imagines,Luc.Im.,Luc.,Im.
+tlg0062_tlg040,Lucianus Sophista,Pro imaginibus,Luc.Pr.Im.,Luc.,Pr.Im.
+tlg0062_tlg041,Lucianus Sophista,De Syria dea,Luc.Syr.D.,Luc.,Syr.D.
+tlg0062_tlg042,Lucianus Sophista,De morte Peregrini,Luc.Peregr.,Luc.,Peregr.
+tlg0062_tlg043,Lucianus Sophista,Fugitivi,Luc.Fug.,Luc.,Fug.
+tlg0062_tlg044,Lucianus Sophista,Toxaris vel amicitia,Luc.Tox.,Luc.,Tox.
+tlg0062_tlg045,Lucianus Sophista,De saltatione,Luc.Salt.,Luc.,Salt.
+tlg0062_tlg046,Lucianus Sophista,Lexiphanes,Luc.Lex.,Luc.,Lex.
+tlg0062_tlg048,Lucianus Sophista,De astrologia,Luc.Astr.,Luc.,Astr.
+tlg0062_tlg049,Lucianus Sophista,Pseudologista,Lus.Pseudol.,Luc.,Pseudol.
+tlg0062_tlg050,Lucianus Sophista,Deorum concilium,Luc.Deor.Conc.,Luc.,D.Conc.
+tlg0062_tlg051,Lucianus Sophista,Tyrannicida,Luc.Tyr.,Luc.,Tyr.
+tlg0062_tlg052,Lucianus Sophista,Abdicatus,Luc.Abd.,Luc.,Abd.
+tlg0062_tlg067,Lucianus Sophista,Dialogi marini,Luc.DMar.,Luc.,Dial. Mar.
+tlg0065_tlg001,Scylax Geographus,Periplus Scylacis,GGM i p. 15.,Scylax,Scylax
+tlg0066_tlg001,Dicaearchus Geographus,Fragmenta,GGM i p. 97.,Dicaearchus,Dicaearchus
+tlg0067_tlg001,Agatharchides Geographus,De mari Erythraeo (excerpta),GGM i p. 111.,Agatharchides,Agatharchides
+tlg0071_tlg001,Periplus Maris Rubri,"Anonymi (Arriani, ut fertur) periplus maris Erythraei",GGM i p. 257,Anon.,Peripl. M. Rubr.
+tlg0074_tlg001,Arrianus Historicus,Alexandri Anabasis,Arr.An.,Arr.,Anab.
+tlg0074_tlg002,Arrianus Historicus,Historia Indica,Arr.Ind.,Arr.,Ind.
+tlg0074_tlg003,Arrianus Historicus,Cynegeticus,Arr.Cyn.,Arr.,Cyn.
+tlg0074_tlg004,Arrianus Historicus,Periplus maris Euxini (Periplus pontis Euxini),Arr.Peripl.M.Eux.,Arr.,Peripl. M. Eux.
+tlg0074_tlg005,Arrianus Historicus,Tactica,Arr.Tact.,Arr.,Tact.
+tlg0075_tlg001,none,"Anonymi (Arriani, ut fertur) periplus ponti Euxini",none,Anon.,Peripl. P. Eux.
+tlg0077_tlg001,Stadiasmus sive Periplus Maris Magni,Fragmenta,GGM i p. 427,Stadiasmus,Stadiasmus
+tlg0082_tlg001,Apollonius Dyscolus Grammaticus,de Pronominibus  / ΠΕΡΙ ΑΝΤΩΝΥΜΙΑΣ,Pron.,Apollonius Dyscolus,Pron.
+tlg0082_tlg002,Apollonius Dyscolus Grammaticus,de Adverbiis / Περὶ ἐπιρρημάτων,Adv.,Apollonius Dyscolus,Adv.
+tlg0082_tlg004,Apollonius Dyscolus Grammaticus,de Syntaxi / De Constructione / Περὶ сυντάξεωс,Synt.,Apollonius Dyscolus,Synt.
+tlg0086_tlg001,Aristoteles Philosophus,Analytica Priora et Posteriora,Arist.APo./Arist.APr.,Arist.,An. post.An. pr.
+tlg0086_tlg002,Aristoteles Philosophus,de Anima,Arist. de An,Arist.,De an.
+tlg0086_tlg003,Aristoteles Philosophus,Athenian Constitution,Arist. Ath.,Arist.,[Ath. Pol.]
+tlg0086_tlg006,Aristoteles Philosophus,Categoriae,Arist.Cat.,Arist.,Cat.
+tlg0086_tlg010,Aristoteles Philosophus,Ethica Nicomachea,Arist.EN,Arist.,Eth. Nic.
+tlg0086_tlg014,Aristoteles Philosophus,Historia Animalium,Arist.HA,Arist.,Hist. an.
+tlg0086_tlg016,Aristoteles Philosophus,de Insomniis,Arist.Insomn.,Arist.,Parv. nat. Insomn.
+tlg0086_tlg017,Aristoteles Philosophus,de Interpretatione,Arist.Int.,Arist.,Int.
+tlg0086_tlg018,Aristoteles Philosophus,De juventute et senectute + De vita et morte,Arist.Juv.,Arist.,Parv. nat. Iuv.
+tlg0086_tlg020,Aristoteles Philosophus,de Longaevitate et brevitate vitae / De longitudine et brevitate vitae,Arist.Long.,Arist.,Parv. nat. Long.
+tlg0086_tlg022,Aristoteles Philosophus,Magna Moralia,Arist.MM,Arist.,[Mag. mor.]
+tlg0086_tlg024,Aristoteles Philosophus,de Memoria et reminiscentia,Arist.Mem.,Arist.,Parv. nat. Mem.
+tlg0086_tlg026,Aristoteles Philosophus,Meteorologica,Arist.Mete.,Arist.,Mete.
+tlg0086_tlg029,Aristoteles Philosophus,Oeconomica,Arist.Oec.,Arist.,Oec.
+tlg0086_tlg030,Aristoteles Philosophus,de Partibus Animalium,Arist.PA,Arist.,Part.An.
+tlg0086_tlg031,Aristoteles Philosophus,Physica,Arist.Ph.,Arist.,Ph.
+tlg0086_tlg034,Aristoteles Philosophus,Poetica,Arist.Po.,Arist.,Poet.
+tlg0086_tlg035,Aristoteles Philosophus,Politica,Arist.Pol.,Arist.,Pol.
+tlg0086_tlg037,Aristoteles Philosophus,de Respiratione,Arist.Resp.,Arist.,Resp.
+tlg0086_tlg040,Aristoteles Philosophus,Sophistici Elenchi,Arist.SE,Arist.,Soph.El.
+tlg0086_tlg041,Aristoteles Philosophus,de Sensu et sensibilibus,Arist.Sens.,Arist.,Parv. nat. Sens.
+tlg0086_tlg042,Aristoteles Philosophus,de Somno et Vigilia,Arist.Somn.Vig.,Arist.,Parv. nat. Somn.
+tlg0086_tlg044,Aristoteles Philosophus,Topica,Arist.Top.,Arist.,Top.
+tlg0086_tlg052,Aristoteles Philosophus,De anima (Vulgata Diversa),NA,Arist.,De an.(VD)
+tlg0086_tlg054,Aristoteles Philosophus,Physica (textus alter),NA,Arist.,Ph.(TA)
+tlg0087_tlg004,Herodianus Grammaticus,Περὶ διχρόνων,Hdn.Gr.2.7-Hdn.Gr.2.20,Hdn.Gr.,Περὶ διχρόνων
+tlg0087_tlg007,Herodianus Grammaticus,Περὶ Ἰλιακῆς προσῳδίας,Hdn.Gr.2.22-Hdn.Gr.2.128,Hdn.Gr.,Περὶ Ἰλιακῆς προσῳδίας
+tlg0087_tlg008,Herodianus Grammaticus,Περὶ Ὀδυσσειακῆς προσῳδίας,Hdn.Gr.2.129-Hdn.Gr.2.165,Hdn.Gr.,Περὶ Ὀδυσσειακῆς προσῳδίας
+tlg0087_tlg009,Herodianus Grammaticus,Περὶ παθῶν,Hdn.Gr.2.166-Hdn.Gr.2.389,Hdn.Gr.,Περὶ παθῶν
+tlg0087_tlg010,Herodianus Grammaticus,Περὶ συντάξεως τῶν στοιχείων,Hdn.Gr.2.390-Hdn.Gr.2.406,Hdn.Gr.,Περὶ συντάξεως τῶν στοιχείων
+tlg0087_tlg011,Herodianus Grammaticus,Περὶ ὀρθογραφίας,Hdn.Gr.2.407-Hdn.Gr.2.611,Hdn.Gr.,Περὶ ὀρθογραφίας
+tlg0087_tlg012,Herodianus Grammaticus,Περὶ ὀνομάτων,Hdn.Gr.2.612-Hdn.Gr.2.633,Hdn.Gr.,Περὶ ὀνομάτων
+tlg0087_tlg013,Herodianus Grammaticus,Περὶ κλίσεως ὀνομάτων,Hdn.Gr.2.634-Hdn.Gr.2.777,Hdn.Gr.,Περὶ κλίσεως ὀνομάτων
+tlg0087_tlg018,Herodianus Grammaticus,Μονόβιβλον περὶ τοῦ μὴ πάντα τὰ ῥήματα κλίνεσθαι εἰς πάντας τοὺς χρόνους,Hdn.Gr.2.779-Hdn.Gr.2.784,Hdn.Gr.,περὶ τοῦ μὴ πάντα τὰ ῥήματα κλίνεσθαι εἰς πάντας τοὺς χρόνους
+tlg0087_tlg021,Herodianus Grammaticus,Περὶ ῥημάτων,Hdn.Gr.2.787-Hdn.Gr.2.824,Hdn.Gr.,Περὶ ῥημάτων
+tlg0087_tlg022,Herodianus Grammaticus,Περὶ τῶν εἰς <μι>,Hdn.Gr.2.825-Hdn.Gr.2.844,Hdn.Gr.,Περὶ τῶν εἰς <μι>
+tlg0087_tlg026,Herodianus Grammaticus,Περὶ παρωνύμων,Hdn.Gr.2.849-Hdn.Gr.2.897,Hdn.Gr.,Περὶ παρωνύμων
+tlg0087_tlg033,Herodianus Grammaticus,Περὶ μονήρους λέξεως,Hdn.Gr.2.908-Hdn.Gr.2.952,Hdn.Gr.,Περὶ μονήρους λέξεως
+tlg0088_tlg001,Aristoxenus Musicus,Elementa Harmonica,Aristox. Harm.,Aristox.,Harm.
+tlg0090_tlg001,Agathemerus Geographus,Geographiae informatio,GGM ii p. 471.,Agathemerus,Agathemerus
+tlg0092_tlg001,Anonymus vel Anonymi,Geographiae Expositio Compendiaria,Geog.Comp (GGM ii p. 494),Anon.,Geog.Comp
+tlg0093_ogl001,Theophrastus Philosophus,Concerning Odours,NA,Theophr.,Odor.
+tlg0093_ogl002,Theophrastus Philosophus,Concerning Weather Signs,NA,Theophr.,Sign.
+tlg0093_tlg001,Theophrastus Philosophus,Historia Plantarum,Thphr. HP,Theophr.,Hist.Pl.
+tlg0093_tlg009,Theophrastus Philosophus,Characteres,Thphr. Char.,Theophr.,Char.
+tlg0094_tlg001,Plutarchus Biographus et Philosophus,De fluviis,Ps.Plu.Fluv.,Ps.-Plut.,Fluv.
+tlg0096_tlg002,"Aesopus, Fabularum Scriptor",Fabulae,none,Aesop.,Fab.
+tlg0099_tlg001,Strabo Geographus,Geographica,Str.,Strabo,Geogr.
+tlg0358_tlg001,Nicomachus Gerasenus Mathematicus,Arithmetica Introductio,Nicom.Ar.,Nicom.,Ar.
+tlg0358_tlg002,Nicomachus Gerasenus Mathematicus,Harmonicum Enchiridium,Nicom.Harm.,Nicom.,Ench.
+tlg0358_tlg004,Nicomachus Gerasenus Mathematicus,Excerpta,Nicom.Exc.,Nicom.,Exc.
+tlg0361_tlg001,Cleonides Musicus,Introductio harmonica,Cleonid.Harm.,Cleonid.,Harm.
+tlg0363_tlg001,Ptolemaeus  Mathematicus,Almagest / Syntaxis Mathematica,Ptol.Alm.,Ptol.,Alm.
+tlg0363_tlg007,Ptolemaeus  Mathematicus,Tetrabiblos (Apotelesmatica),Ptol.Tetr.,Ptol.,Tetr.
+tlg0525_tlg001,Pausanias Periegeta,Graeciae Descriptio,none,Paus.,Paus.
+tlg0527_tlg001,Vetus Testamentum Graece redditum,Genesis,LXX Ge.,OT,LXX Ge.
+tlg0527_tlg002,Vetus Testamentum Graece redditum,Exodus,LXX Ex.,OT,LXX Ex.
+tlg0527_tlg003,Vetus Testamentum Graece redditum,Leviticus,LXX Le.,OT,LXX Le.
+tlg0527_tlg004,Vetus Testamentum Graece redditum,Numbers / Numeri,LXX Nu.,OT,LXX Nu.
+tlg0527_tlg005,Vetus Testamentum Graece redditum,Deuteronomy / Deuteronomium,LXX De.,OT,LXX De.
+tlg0527_tlg006,Vetus Testamentum Graece redditum,Joshua / Josue (Cod. Vaticanus + Cod. Alexandrinus),LXX Jo.,OT,LXX Jo.
+tlg0527_tlg008,Vetus Testamentum Graece redditum,Judges / Judices (Cod. Alexandrinus),LXX Jd.,OT,LXX Jd.
+tlg0527_tlg010,Vetus Testamentum Graece redditum,Ruth,LXX Ru.,OT,LXX Ru.
+tlg0527_tlg011,Vetus Testamentum Graece redditum,1 Kings / Regnorum I  / Samuel I,LXX 1 Ki.,OT,LXX 1 Ki.
+tlg0527_tlg012,Vetus Testamentum Graece redditum,2 Kings / Regnorum II / Samuel 2,LXX 2 Ki.,OT,LXX 2 Ki.
+tlg0527_tlg013,Vetus Testamentum Graece redditum,3 Kings / Regnorum III / Regum I,LXX 3 Ki.,OT,LXX 3 Ki.
+tlg0527_tlg014,Vetus Testamentum Graece redditum,4 Kings / Regnorum IV / Regum II,LXX 4 Ki.,OT,LXX 4 Ki.
+tlg0527_tlg015,Vetus Testamentum Graece redditum,1 Chronicles / Paralipomenon i sive Chronicon I,LXX 1 Ch.,OT,LXX 1 Ch.
+tlg0527_tlg016,Vetus Testamentum Graece redditum,2 Chronicles / Paralipomenon ii sive Chronicon ii,LXX 2 Ch.,OT,LXX 2 Ch.
+tlg0527_tlg017,Vetus Testamentum Graece redditum,1 Esdras / Esdras i (liber apocryphus),LXX 1 Es.,OT,LXX 1 Es.
+tlg0527_tlg018,Vetus Testamentum Graece redditum,2 Esdras / Esdras ii (Ezra et Nehemias in textu Masoretico),LXX 2 Es.,OT,LXX 2 Es.
+tlg0527_tlg019,Vetus Testamentum Graece redditum,Esther,LXX Es.,OT,LXX Es.
+tlg0527_tlg020,Vetus Testamentum Graece redditum,Judith,LXX Ju.,OT,LXX Ju.
+tlg0527_tlg021,Vetus Testamentum Graece redditum,Tobit / Tobias (Cod. Vaticanus + Cod. Alexandrinus),LXX To.,OT,LXX To.
+tlg0527_tlg023,Vetus Testamentum Graece redditum,1 Maccabees / Machabaeorum I,LXX 1 Ma.,OT,LXX 1 Ma.
+tlg0527_tlg024,Vetus Testamentum Graece redditum,2 Maccabees / Machabaeorum ii,LXX 2 Ma.,OT,LXX 2 Ma.
+tlg0527_tlg025,Vetus Testamentum Graece redditum,3 Maccabees / Machabaeorum iii,LXX 3 Ma.,OT,LXX 3 Ma.
+tlg0527_tlg026,Vetus Testamentum Graece redditum,4 Maccabees / Machabaeorum iii,LXX 4 Ma.,OT,LXX 4 Ma.
+tlg0527_tlg027,Vetus Testamentum Graece redditum,Psalms / Psalmi,LXX Ps.,OT,LXX Ps.
+tlg0527_tlg028,Vetus Testamentum Graece redditum,Prayer of Manasses / Odae,LXX Prec.Man.,OT,LXX Prec.Man.
+tlg0527_tlg029,Vetus Testamentum Graece redditum,Proverbs / Proverbia,LXX Pr.,OT,LXX Pr.
+tlg0527_tlg032,Vetus Testamentum Graece redditum,Job,LXX Jb.,OT,LXX Jb.
+tlg0527_tlg033,Vetus Testamentum Graece redditum,Wisdom of Solomon / Sapientia Salomonis,LXX Wi.,OT,LXX Wi.
+tlg0527_tlg034,Vetus Testamentum Graece redditum,Ecclesiasticus (Siracides),LXX Si.,OT,LXX Si.
+tlg0527_tlg036,Vetus Testamentum Graece redditum,Hosea / Osee,LXX Ho.,OT,LXX Ho.
+tlg0527_tlg037,Vetus Testamentum Graece redditum,Amos,LXX Am.,OT,LXX Am.
+tlg0527_tlg038,Vetus Testamentum Graece redditum,Micah / Michaeas,LXX Mi.,OT,LXX Mi.
+tlg0527_tlg039,Vetus Testamentum Graece redditum,Joel,LXX Jl.,OT,LXX Jl.
+tlg0527_tlg046,Vetus Testamentum Graece redditum,Zechariah / Zacharias,LXX Za.,OT,LXX Za.
+tlg0527_tlg047,Vetus Testamentum Graece redditum,Malachi / Malachias,LXX Ma.,OT,LXX Ma.
+tlg0527_tlg048,Vetus Testamentum Graece redditum,Isaiah /  Isaias,LXX Is.,OT,LXX Is.
+tlg0527_tlg049,Vetus Testamentum Graece redditum,Jeremiah / Jeremias,LXX Je.,OT,LXX Je.
+tlg0527_tlg050,Vetus Testamentum Graece redditum,Baruch,LXX Bar.,OT,LXX Bar.
+tlg0527_tlg051,Vetus Testamentum Graece redditum,Lamentations,LXX La.,OT,LXX La.
+tlg0527_tlg053,Vetus Testamentum Graece redditum,Ezekiel / Ezechiel,LXX Ez.,OT,LXX Ez.
+tlg0527_tlg056,Vetus Testamentum Graece redditum,Daniel,LXX Da.,OT,LXX Da.
+tlg0527_tlg057,Vetus Testamentum Graece redditum,Daniel (Theodotionis versio),Thd.Da.,OT,Thd.Da.
+tlg0530_tlg005,Galenus Medicus,De fasciis liber,none,Gal.,De fasciis
+tlg0530_tlg006,Galenus Medicus,Ad Gaurum quomodo animetur fetus,none,Gal.,Ad Gaurum
+tlg0530_tlg012,Galenus Medicus,Introductio seu medicus,none,Gal.,Introductio seu medicus
+tlg0530_tlg029,Galenus Medicus,De remediis parabilibus libri iii,none,Gal.,De remediis parabilibus
+tlg0530_tlg032,Galenus Medicus,De theriaca ad Pamphilianum,none,Gal.,De theriaca ad Pamphilianum
+tlg0530_tlg043,Galenus Medicus,De optima secta ad Thrasybulum liber,none,Gal.,De optima secta ad Thrasybulum
+tlg0540_tlg001,Lysias Orator,De caede Eratosthenis \ On the Murder of Eratosthenes,Lys.,Lys.,De caede Eratosthenis
+tlg0540_tlg002,Lysias Orator,Epitaphius \ Funeral Oration,Lys.,Lys.,Epitaphius
+tlg0540_tlg003,Lysias Orator,Contra Simonem \ Against Simon,Lys.,Lys.,Contra Simonem
+tlg0540_tlg006,Lysias Orator,In Andocidem [Sp.]  \ Against Andocides,Lys.,Lys.,In Andocidem [Sp.]
+tlg0540_tlg007,Lysias Orator,Areopagiticus \ On the Olive Stump,Lys.,Lys.,Areopagiticus
+tlg0540_tlg012,Lysias Orator,In Eratosthenem \ Against Eratosthenes,Lys.,Lys.,In Eratosthenem
+tlg0540_tlg013,Lysias Orator,In Agoratum \ Against Agoratus,Lys.,Lys.,In Agoratum
+tlg0540_tlg014,Lysias Orator,In Alcibiadem 1 \ Against Alcibiades 1,Lys.,Lys.,In Alcibiadem 1 
+tlg0540_tlg019,Lysias Orator,"Ὑπὲρ τῶν Ἀριστοφάνους χρημάτων, πρὸς τὸ δημόσιον \ On the Property of Aristophanes",Lys.,Lys.,Ὑπὲρ τῶν Ἀριστοφάνους χρημάτων
+tlg0540_tlg020,Lysias Orator,Pro Polystrato [Sp.]  \ For Polystratus,Lys.,Lys.,Pro Polystrato [Sp.]  \ For Polystratus
+tlg0540_tlg025,Lysias Orator,[Δήμου καταλύσεως] ἀπολογία \ Defence against a Charge of subverting the Democracy,Lys.,Lys.,[Δήμου καταλύσεως] ἀπολογία
+tlg0540_tlg030,Lysias Orator,In Nicomachum \ Against Nicomachus,Lys.,Lys.,In Nicomachum
+tlg0540_tlg031,Lysias Orator,n Philonem \ Against Philon,Lys.,Lys.,n Philonem
+tlg0540_tlg032,Lysias Orator,In Diogitonem \ Against Diogeiton,Lys.,Lys.,In Diogitonem
+tlg0543_tlg001,Polybius Historicus,Historiae,none,Polyb.,Polyb.
+tlg0544_tlg001,Sextus Empiricus Philosophus,Purrôneioi hupotnpôseis (Pyrrhoniae hypotyposes),S.E. P.,Sext. Emp.,Pyr.
+tlg0544_tlg002,Sextus Empiricus Philosophus,adversus Mathematicos,S.E. M.,Sext. Emp.,Math.
+tlg0548_tlg001,Apollodorus Mythographus,Bibliotheca,none,Apollod.,Bibl.
+tlg0548_tlg002,Apollodorus Mythographus,Epitome,none,Apollod.,Epit.
+tlg0551_tlg004,Appianus Historicus,Samnitica,App.Sam.,App.,Sam.
+tlg0551_tlg005,Appianus Historicus,Gallic Wars / Celtica,App.Gall.,App.,Gall.
+tlg0551_tlg007,Appianus Historicus,Iberica,App.Hisp.,App.,Hisp.
+tlg0551_tlg008,Appianus Historicus,Annibaica,App.Hann.,App.,Hann.
+tlg0551_tlg009,Appianus Historicus,Punica / Libyca,App.Pun.,App.,Pun.
+tlg0551_tlg011,Appianus Historicus,Macedonica,App.Mac.,App.,Mac.
+tlg0551_tlg012,Appianus Historicus,Illyrica,App.Ill.,App.,Ill.
+tlg0551_tlg013,Appianus Historicus,Syrica,App.Syr.,App.,Syr.
+tlg0551_tlg014,Appianus Historicus,Mithridatica,App.Mith.,App.,Mith.
+tlg0551_tlg017,Appianus Historicus,Bellum Civile,App.BC,App.,B Civ.
+tlg0553_tlg001,Artemidorus Daldianus Onirocriticus,Onirocriticon,none,Artem.,Onirocriticon
+tlg0554_tlg001,Charito Scriptor Eroticus,De Chaerea et Callirhoe,Erotici ii p. 3.,Charito,De Chaerea et Callirhoe
+tlg0555_tlg001,Clemens Alexandrinus Theologus,Protrepticus,Clem.Al.Protr.,Clem. Al.,Protr.
+tlg0555_tlg002,Clemens Alexandrinus Theologus,Paedagogus,Clem.Al.Paed.,Clem. Al.,Paed.
+tlg0555_tlg004b,Clemens Alexandrinus Theologus,Paedagogus,NA,Clem. Al.,Strom.
+tlg0555_tlg005,Clemens Alexandrinus Theologus,Eclogae propheticae,none,Clem. Al.,Eclogae propheticae
+tlg0555_tlg006,Clemens Alexandrinus Theologus,Quis Dis Salvetur,none,Clem. Al.,Quis Dis Salvetur
+tlg0555_tlg007,Clemens Alexandrinus Theologus,Excerpta ex Theodoto,none,Clem. Al.,Excerpta ex Theodoto
+tlg0561_tlg001,Longus Scriptor Eroticus,Daphnis et Chloe,Erotici i p. 239.,Longus,Daphnis et Chloe
+tlg0563_tlg001,Maximus Tyrius Sophista,Dialexeis/Dissertationes,none,Maximus Tyrius,Dial.
+tlg0565_tlg001,Soranus Medicus,Gynaeciorum libri iv,Soran.,Sor.,Gyn.
+tlg0565_tlg003,Soranus Medicus,de fasciis,Soran.Fasc.,Sor.,Fasc.
+tlg0592_tlg001,Hermogenes Rhetor,Progymnasmata,Herm.Prog.,Hermog.,Prog.
+tlg0592_tlg002,Hermogenes Rhetor,Peri tôn staseôn (Περὶ στάσεων),Hermog.Stat.,Hermog.,Stat.
+tlg0592_tlg003,Hermogenes Rhetor,Peri Heureseôs (Περὶ εὑρέσεως [Sp.] ),Hermog.Inv.,Hermog.,Inv.
+tlg0592_tlg004,Hermogenes Rhetor,Peri ideôn (Περὶ ἰδεῶν λόγου),Hermog.Id.,Hermog.,Id.
+tlg0592_tlg005,Hermogenes Rhetor,Peri Methodou Deinotêtos (Περὶ μεθόδου δεινότητος [Sp.] ),Hermog.Meth.,Hermog.,Meth.
+tlg0593_1st1K002,Gorgias Rhetor et Sophista,Palamedes,Gorg.Pal.,Gorg.,Pal.
+tlg0610_perseus002,Alcidamas Rhetor,Peri Sophiston,NA,Alcid.,Soph.
+tlg0610_tlg001,Alcidamas Rhetor,Fragmenta / Odusseus,Alcid.Od.,Alcid.,Od.
+tlg0612_tlg001,Dio Chrysostomus Sophista,Orationes,none,Dio Chrys.,Or.
+tlg0614_tlg001,Babrius Fabularum Scriptor,Mythiambi Aesopici,none,Babrius,Fable
+tlg0615_tlg001,Aspasius Philosophus,In ethica Nichomachea commentaria,Asp. in EN,Aspasias,Comment. Eth. Nic.
+tlg0616_tlg001,Polyaenus Historicus,Strategemata,none,Polyaenus,Strat.
+tlg0616_tlg002,Polyaenus Historicus,Excerpta Polyaeni,none,Polyaenus,Exc.
+tlg0627_tlg001,Hippocrates Medicus,De Prisca Medicina,Hp.VM,Hippoc.,VM
+tlg0627_tlg002,Hippocrates Medicus,De  aëre aquis et locis,Hp. Aër.,Hippoc.,Aer.
+tlg0627_tlg003,Hippocrates Medicus,Prognosticon,Hp. Prog.,Hippoc.,Prog.
+tlg0627_tlg004,Hippocrates Medicus,De diaeta in morbis acutis,Hp. Acut.,Hippoc.,Acut.
+tlg0627_tlg005,Hippocrates Medicus,De diaeta acutorum,Hp. Acut. (Sp.),Hippoc.,Acut. (Sp.)
+tlg0627_tlg006,Hippocrates Medicus,De Morbis Popularibus (Epidemiae),Hp.Epid.,Hippoc.,Epid.
+tlg0627_tlg007,Hippocrates Medicus,De capitis vulneribus,Hp. VC,Hippoc.,VC
+tlg0627_tlg008,Hippocrates Medicus,De officina medici,Hp.Off.,Hippoc.,Off.
+tlg0627_tlg009,Hippocrates Medicus,De fracturis,Hp.Fract.,Hippoc.,Fract.
+tlg0627_tlg010,Hippocrates Medicus,De articulis,Hp. Art.,Hippoc.,Art.
+tlg0627_tlg011,Hippocrates Medicus,Vectiarius,Hp.Mochl.,Hippoc.,Art.
+tlg0627_tlg012,Hippocrates Medicus,Aporhismi,Hp. Aph.,Hippoc.,Aph.
+tlg0627_tlg015,Hippocrates Medicus,De Humoribus,Hp.Hum.,Hippoc.,Hum.
+tlg0627_tlg016,Hippocrates Medicus,Prorrheticon,Hp.Prorrh.,Hippoc.,Prorrh.
+tlg0627_tlg017,Hippocrates Medicus,Coa Praesegia,Hp.Coa.,Hippoc.,Coa.
+tlg0627_tlg018,Hippocrates Medicus,De Arte,Hp. de Arte,Hippoc.,De Arte
+tlg0627_tlg019,Hippocrates Medicus,De natura hominis,Hp.Nat.Hom.,Hippoc.,Nat. hom.
+tlg0627_tlg021,Hippocrates Medicus,De flatibus,Hp.Flat.,Hippoc.,Flat.
+tlg0627_tlg023,Hippocrates Medicus,De morbis i‑iii,Hp.Morb.,Hippoc.,Morb.
+tlg0627_tlg024a,Hippocrates Medicus,De La Generation,Hp.Genit.,Hippoc.,Genit.
+tlg0627_tlg024b,Hippocrates Medicus,De natura pueri,NA,Hippoc.,Nat. puer.
+tlg0627_tlg025,Hippocrates Medicus,De affectionibus,Hp. Aff.,Hippoc.,Aff.
+tlg0627_tlg026,Hippocrates Medicus,De locis in homine,Hp.Loc.Hom.,Hippoc.,Loc. Hom.
+tlg0627_tlg027,Hippocrates Medicus,De Morbo Sacro,Hp.Morb.Sacr.,Hippoc.,Morb.Sacr.
+tlg0627_tlg028,Hippocrates Medicus,De ulceribus,Hp.Ulc.,Hippoc.,Ulc.
+tlg0627_tlg031,Hippocrates Medicus,De diaeta i‑iv,Hp.Vict.,Hippoc.,Vict.
+tlg0627_tlg032,Hippocrates Medicus,De affectionibus interioribus,Hp.Int.,Hippoc.,Int.
+tlg0627_tlg033,Hippocrates Medicus,De natura muliebri,Hp.Nat.Mul.,Hippoc.,Nat. mul.
+tlg0627_tlg036,Hippocrates Medicus,De mulierum affectibus i‑iii,Hp.Mul.,Hippoc.,Mul.
+tlg0627_tlg038,Hippocrates Medicus,De superfetatione,Hp.Superf.,Hippoc.,Superf.
+tlg0627_tlg042,Hippocrates Medicus,De glandulis,Hp. Gland.,Hippoc.,Gland.
+tlg0627_tlg043,Hippocrates Medicus,De carnibus,Hp. Carn.,Hippoc.,Carn.
+tlg0627_tlg048,Hippocrates Medicus,De Ossium Natura,Hp.Oss.,Hippoc.,Oss.
+tlg0627_tlg052,Hippocrates Medicus,De judicationibus,Hp.Judic.,Hippoc.,Iudic.
+tlg0627_tlg055,Hippocrates Medicus,Epistulae,Hp.Ep.,Hippoc.,[Ep.]
+tlg0640_tlg001,Alciphro Epistolographus,Epistulae,none,Alciphro,Ep.
+tlg0643_tlg001,Anonymus Londinensis,Iatrica (fort. auctore Menone) (Brit. Mus. inv. 137),Anon.Lond.,Anon.Lond.,Iatrica
+tlg0644_tlg001,Aristophanes Byzantinus Philosophus,Historiae Animalium Epitome subiunctis Aeliani Timothei aliorumque eclogis,Ar.Byz.Epit.,Ar. Byz.,Ar. Byz.
+tlg0645_tlg001,Justin Martyr,Apologia,none,Iust.Mar.,Apol.I
+tlg0645_tlg002,Justin Martyr,Apologia secunda,none,Iust.Mar.,Apol.II
+tlg0645_tlg003,Justin Martyr,Dialogus cum Tryphone,none,Iust.Mar.,Dial.
+tlg0646_tlg004,none,Epistula ad Diognetum,none,Ps.-Iust.Mar.,Epistula ad Diognetum
+tlg0658_tlg001,Heliodorus Scriptor Eroticus,Aethiopica,"Erotici, p. 223",Heliod.,Aeth.
+tlg0671_tlg001,Philumenus Medicus,De venenatis animalibus eorumque remediis,Phil.Ven.,Philimenus,Ven.
+tlg0708_tlg001,Ammonius Grammaticus,De Adfinium vocabulorum differentis,Ammon.Diff.,Ammon.,Ammon.
+tlg0731_tlg001,Adamantius Physiognomonicus,Physiognomica,none,Adamantius,Phys.
+tlg0731_tlg003,Adamantius Physiognomonicus,Physiognomonica (epitome Matritensis),none,Adamantius,Epit.
+tlg0732_tlg001,Adamantius Physiognomonicus_Alexander Aphrodisiensis Philosophus,De Ventis_de Mixtione,none_Alex.Aphr. Mixt.,Adamantius,Alex.Aphr. Mixt.
+tlg0732_tlg004,Alexander Aphrodisiensis Philosophus,in Aristotelis Metaphysica commentaria,Alex.Aphr. in Metaph,Alex.Aphr.,in Metaph.
+tlg0732_tlg005,Alexander Aphrodisiensis Philosophus,"in Aristotelis Analyticorum Priorum librum I commentarium,",Alex.Aphr. in APr.,Alex.Aphr.,in APr.
+tlg0732_tlg006,Alexander Aphrodisiensis Philosophus,in Aristotelis Topicorum libros octo commentaria,Alex.Aphr. in Top,Alex.Aphr.,in Top.
+tlg0732_tlg007,Alexander Aphrodisiensis Philosophus,in librum de sensu commentarium,Alex.Aphr. in Sens.,Alex.Aphr.,in Sens.
+tlg0732_tlg008,Alexander Aphrodisiensis Philosophus,in Aristotelis Meteorologicorum libros commentaria,Alex.Aphr. in Mete.,Alex.Aphr.,in Mete.
+tlg0732_tlg010,Alexander Aphrodisiensis Philosophus,de Anima Liber,Alex.Aphr. de An.,Alex.Aphr.,de An.
+tlg0732_tlg011,Alexander Aphrodisiensis Philosophus,De anima libri mantissa (= De anima liber alter),none,Alex.Aphr.,de An.II
+tlg0732_tlg012,Alexander Aphrodisiensis Philosophus,Quaestiones,Alex.Aphr. Quaest.,Alex.Aphr.,Quaest.
+tlg0732_tlg013,Alexander Aphrodisiensis Philosophus,Problêmata anekdota,Alex.Aphr. Pr.Anecd.,Alex.Aphr.,Pr.Anecd.
+tlg0732_tlg014,Alexander Aphrodisiensis Philosophus,de Fato,Alex.Aphr. Fat.,Alex.Aphr.,Fat.
+tlg0732_tlgX01,Alexander Aphrodisiensis Philosophus,In Aristotelis Sophisticos Elenchos Commentarius [Sp.],NA,Alex.Aphr.,in Soph. El.
+tlg0751_tlg034,pseudo-Hippocrates,De septimestri partu,NA,ps.-Hippoc.,Sept.
+tlg1205_tlg001,Athenagoras,Legatio sive Supplicatio pro Christianis,none,Athenagoras,Leg.
+tlg1205_tlg002,Athenagoras,De resurrectione,none,Athenagoras,Res.
+tlg1210_tlg001,Autolycus Astronomus,De sphaera quae movetur,none,Autol.,De sphaera
+tlg1210_tlg002,Autolycus Astronomus,De ortibus et occasibus,none,Autol.,De ortibus
+tlg1216_tlg001,none,Barnabas Epistula,none,Barnabas,ep.
+tlg1252_tlg002,Certamen Homeri et Hesiodi,Certamen Homeri et Hesiodi,Certamen,Certamen,Homeri et Hediodi
+tlg1271_tlg001,Clemens Romanus,Epistula i ad Corinthios,none,Clem. Rom.,Cor.I
+tlg1271_tlg002,Clemens Romanus,Epistula ii ad Corinthios,none,Clem. Rom.,Cor.II
+tlg1272_tlg001,Cleomedes Astronomus,De motu circulari corporum caelestium,none,Cleom. Astr.,De motu
+tlg1389_tlg001,Harpocratio Grammaticus,Lexicon in decem oratores Atticos,none,Harp.,Harp.
+tlg1419_tlg001,Hermas,Pastor,none,Hermas,Pastor
+tlg1431_tlg003,Hipparchus Astronomicus,In Arati et Eudoxi phaenomena commentariorum,none,Hipparchus,In arat.
+tlg1443_tlg004,Ignatius Antiochenus,Ad Ephesios,NA,Ignatius Antiochenus,Ad Ephesios
+tlg1447_tlg001,Irenaeus,Libros Quinque adversus Haereses,none,Irenaeus,ad Haer.
+tlg1463_tlg001,Enoch Judaeus,Apocalypsis Enochi,none,Enoch Judaeus,Apo.
+tlg1484_tlg001,Martyrium Polycarpi,Epistula ecclesiae Smyrnensis de martyrio sancti Polycarpi,none,Martyrium Polycarpi,Martyrium Polycarpi
+tlg1487_tlg001,Maximus Astrologus,Περὶ καταρχῶν,Max.,Max.,Cat.
+tlg1487_tlg002,Maximus Astrologus,Περὶ καταρχῶν  (epitome),Max.Epit.,Max.,Epit.
+tlg1551_tlg001,Oracula Sibyllina,Oracula,none,Oracula Sibyllina,Frag.
+tlg1595_tlg221,Philodemus,De Musica Librorum Quae Exstant,NA,Phld.,De Musica
+tlg1600_tlg001,Philostratus Sophista,Imagines,Philostr.Im.,Philostr.,Imag.
+tlg1701_tlg001,Testamentum Abrahamae,Recension A,NA,Testamentum Abrahamae,A
+tlg1701_tlg002,Testamentum Abrahamae,Recension B,NA,Testamentum Abrahamae,B
+tlg1724_tlg001,Theon Smyrnaeus Philosophus,De utilitate mathematicae,Theo Sm.,Theo Smyrn.,Math.
+tlg1725_tlg001,Theophilus,Ad Autolycum,none,Theoph.,Ad Autol.
+tlg1765_tlg003,Vitae Aesopi,Vita Pl vel Accursiana (sub auctore Maximo Planude) (recensio 1),none,Vitae Aesopi,Vitae Aesopi
+tlg1766_tlg001,Tatianus,Oratio ad Graecos,none,Tatianus,Ad Gr.
+tlg1799_tlg001,Euclides Geometra,Elementa,Euc. (cited without title),Euc.,Elem.
+tlg1799_tlg007,Euclides Geometra,Data,Euc. Dat.,Euc.,Dat.
+tlg1799_tlg012,Euclides Geometra,Phaenomena,Euc.Phaen.,Euc.,Phaen.
+tlg1799_tlg014,Euclides Geometra,Phaenomena (demonstrationes alterae recensionis b),none,Euc.,Dem.
+tlg1799_tlg015,Euclides Geometra,Sectio Canonis,Euc.Sect.Can.,Euc.,Sect.Can.
+tlg2000_tlg001,Plotinus Philosophus,Enneades,none,Plotinus,Enn.
+tlg2001_tlg038,Themistius Sophista,Aristotelis Analyticorum Posteriorum paraphrasis,Them. in APo,Them.,in APo
+tlg2001_tlg039,Themistius Sophista,in Aristotelis Physica paraphrasis,Them. in Ph.,Them.,in Ph.
+tlg2001_tlg040,Themistius Sophista,in libros Aristotelis de Anima paraphrasis,Them. in de An.,Them.,in de An.
+tlg2001_tlg041,Themistius Sophista,Themistii (Sophoniae) in Parva Naturalia commentarium,Them. in PN,Them.,in PN
+tlg2001_tlg042,Themistius Sophista,in Aristotelis Analyticorum Priorum librum I para- phrasis,Them. in APr,Them.,in APr.
+tlg2018_tlg001,Eusebius Caesariensis  Scriptor Ecclesiasticus,Praeparatio Evangelica,Eus. PE,Euseb.,Praep. evang.
+tlg2018_tlg002,Eusebius Caesariensis  Scriptor Ecclesiasticus,Historia Ecclesiastica,none,Euseb.,Hist. eccl.
+tlg2018_tlg003,Eusebius Caesariensis  Scriptor Ecclesiasticus,De martyribus Palaestinae,none,Euseb.,Mart. Pal.
+tlg2018_tlg005,Eusebius Caesariensis  Scriptor Ecclesiasticus,Demonstratio Evangelica,Eus. DE,Euseb.,Dem. Evan.
+tlg2018_tlg009,Eusebius Caesariensis  Scriptor Ecclesiasticus,De ecclesiastica theologia,none,Euseb.,Eccl. Theol.
+tlg2018_tlg010,Eusebius Caesariensis  Scriptor Ecclesiasticus,De Theophania Fragmenta,none,Euseb.,Theoph.
+tlg2018_tlg011,Eusebius Caesariensis  Scriptor Ecclesiasticus,Onomasticon,none,Euseb.,Onom.
+tlg2018_tlg020,Eusebius Caesariensis  Scriptor Ecclesiasticus,Vita Constantini,none,Euseb.,Vit. Const.
+tlg2018_tlg021,Eusebius Caesariensis  Scriptor Ecclesiasticus,Constantini imperatoris oratio ad coetum sanctorum,none,Euseb.,Const.
+tlg2018_tlg022,Eusebius Caesariensis  Scriptor Ecclesiasticus,De laudibus Constantini,none,Euseb.,Laud. Const.
+tlg2021_tlg002,Epiphanius,Panarion (Adversus haereses),none,Epiph.,Adv. haeres. Epit.
+tlg2021_tlg003,Epiphanius,Anacephalaeosis [Sp.],none,Epiph.,Anac.
+tlg2022_tlg007,Gregorius Nazianzenus,Adversus Eunomianos (orat. 27),none,Greg. Naz.,Adversus Eunomianos
+tlg2022_tlg008,Gregorius Nazianzenus,De theologia (orat. 28),none,Greg. Naz.,De theologia
+tlg2022_tlg009,Gregorius Nazianzenus,De filio (orat. 29),none,Greg. Naz.,De filio (29)
+tlg2022_tlg010,Gregorius Nazianzenus,De filio (orat. 30),none,Greg. Naz.,De filio (30)
+tlg2022_tlg011,Gregorius Nazianzenus,De spiritu sancto (orat. 31),none,Greg. Naz.,De spiritu sancto
+tlg2023_tlg002,Iamblichus Philosophus,Protrepticus,Iamb.Protr.,Iamb.,Protr.
+tlg2029_tlg001,none,Anonymi summaria ratio geographiae in sphaera intelligendae,none,Anon.,Sum.Geogr.
+tlg2034_tlg002,Porphyrius Tyrius Philosophus,Vita Pythagorae,Porph.VP,Porph.,VP
+tlg2034_tlg003,Porphyrius Tyrius Philosophus,de Abstinentia,Porph.Abst.,Porph.,Abst.
+tlg2034_tlg005,Porphyrius Tyrius Philosophus,ad Marcellam,Porph.Marc.,Porph.,Marc.
+tlg2034_tlg006,Porphyrius Tyrius Philosophus,Isagoge sive quinque voces,Porph.in Cat.,Porph.,in Cat.
+tlg2034_tlg007,Porphyrius Tyrius Philosophus,In Aristotelis categorias expositio per interrogationem et responsionem,Porph.Intr.,Porph.,Intr.
+tlg2034_tlg014,Porphyrius Tyrius Philosophus,Quaestionum Homericarum ad Iliadem pertinentium reliquiae,Porph. ad Il.,Porph.,ad Il.
+tlg2034_tlg015,Porphyrius Tyrius Philosophus,Zetemata codicis Vaticani,none,Porph.,Zet.
+tlg2034_tlg027,Porphyrius Tyrius Philosophus,Historia philosophiae,none,Porph.,Hist. Phil.
+tlg2036_tlg001,Dexippus Philosophus,in Aristotelis Categorias commentarium,Dexipp. in Cat.,Dexipp.,in Cat.
+tlg2039_tlg004,Diophantus Mathematicus,Fragmentum [Sp.] (e cod. Paris. 453),none,Dioph. Math.,Frag.I
+tlg2039_tlg005,Diophantus Mathematicus,Fragmentum [Sp.] (e cod. Paris. gr. 2448),none,Dioph. Math.,Frag.II
+tlg2041_tlg001,Marcellus,Fragmenta,none,Marcellus,Frag.
+tlg2042_tlg001,Origenes Theologus,Contra Celsum,Cels.,Orig.,Cels.
+tlg2042_tlg005,Origenes Theologus,"Commentarii in evangelium Joannis (lib. 1, 2, 4, 5, 6, 10, 13, 19‑20‑ 28‑32)",none,Orig.,In ev. Jo.
+tlg2042_tlg006,Origenes Theologus,Fragmenta in evangelium Joannis (in catenis),none,Orig.,Frag. in ev. Jo.
+tlg2042_tlg007,Origenes Theologus,Exhortatio ad martyrium,none,Orig.,Exhortatio ad martyrium
+tlg2042_tlg008,Origenes Theologus,De Oratione,none,Orig.,De Oratione
+tlg2042_tlg009,Origenes Theologus,In Jeremiam (homiliae 1‑11),none,Orig.,In Jeremiam (homiliae 1‑11)
+tlg2042_tlg010,Origenes Theologus,Fragmenta in Jeremiam (in catenis),none,Orig.,Fragmenta in Jeremiam
+tlg2042_tlg011,Origenes Theologus,Fragmenta in Lamentationes (in catenis,none,Orig.,Fragmenta in Lamentationes
+tlg2042_tlg013,Origenes Theologus,De engastrimytho (= Homilia in i Reg. [i Sam.] 28.3‑25),none,Orig.,De engastrimytho 
+tlg2042_tlg014,Origenes Theologus,Fragmenta in librum primum Regnorum (in catenis),none,Orig.,Fragmenta in librum primum Regnorum 
+tlg2042_tlg016,Origenes Theologus,Homiliae in Lucam,none,Orig.,Homiliae in Lucam
+tlg2042_tlg017,Origenes Theologus,Fragmenta in Lucam (in catenis),none,Orig.,Fragmenta in Lucam (in catenis)
+tlg2042_tlg019,Origenes Theologus,Philocalia sive Ecloga de operibus Origenis a Basilio et Gregorio Nazianzeno facta (cap. 1‑27),none,Orig.,Philocalia
+tlg2042_tlg021,Origenes Theologus,In Jeremiam (homiliae 12‑20),none,Orig.,In Jeremiam (homiliae 12‑20)
+tlg2042_tlg028,Origenes Theologus,Commentariorum series in evangelium Matthaei (Mt. 22.34‑27‑63),none,Orig.,in evangelium Matthaei (Mt. 22.34‑27‑63)
+tlg2042_tlg029,Origenes Theologus,Commentarium in evangelium Matthaei (lib. 10‑11),none,Orig.,in evangelium Matthaei (lib. 10‑11)
+tlg2042_tlg030,Origenes Theologus,Commentarium in evangelium Matthaei (lib. 12‑17),none,Orig.,in evangelium Matthaei (lib. 12‑17)
+tlg2042_tlg045,Origenes Theologus,Epistula ad Africanum,none,Orig.,Epistula ad Africanum
+tlg2042_tlg048,Origenes Theologus,Selecta in Genesim (fragmenta e catenis),none,Orig.,Selecta in Genesim 
+tlg2042_tlg050,Origenes Theologus,Selecta in Exodum (fragmenta e catenis),none,Orig.,Selecta in Exodum
+tlg2042_tlg052,Origenes Theologus,Selecta in Numeros,none,Orig.,Selecta in Numeros
+tlg2042_tlg053,Origenes Theologus,Selecta in Deuteronomium (fragmenta e catenis),none,Orig.,Selecta in Deuteronomium
+tlg2042_tlg057,Origenes Theologus,"Homiliae in Job (fragmenta in catenis, typus I) (e codd. Paris.)",none,Orig.,Homiliae in Job
+tlg2048_tlg001,Sozomenus,Historia ecclesiastica,none,Sozom.,Hist. eccl.
+tlg2057_tlg002,"Socrates, Scholasticus",Historia ecclesiastica,none,Socrates,Hist. eccl.
+tlg2058_tlg001,Philostorgius,Historia ecclesiastica,none,Philostorgius,Hist. eccl.
+tlg2115_tlg060,Hippolytus Scriptor Ecclesiasticus,Refutatio Omnium Haeresium (= Philosophumena),Hippol. Haer.,Hippol.,Haer.
+tlg2135_tlg001,Alypius Musicus,Isagoge Musica,none,Alypius,Mus.
+tlg2136_tlg001,Bacchius Musicus,Isagoge artis musicae,Bacch.Harm.,Bacch.,Harm.
+tlg2137_tlg001,Gaudentius Musicus,Harmonica Introductio,none,Gaudentius,Harm.
+tlg2200_tlg001,Libanius Sophista,Epistulae,"Lib.Ep. (x, xi)",Lib.,Ep.
+tlg2200_tlg00401,Libanius,Oratio 1,NA,Lib.,Oratio 1
+tlg2200_tlg00402,Libanius,Oratio 2,NA,Lib.,Oratio 2
+tlg2200_tlg00403,Libanius,Oratio 3,NA,Lib.,Oratio 3
+tlg2200_tlg00404,Libanius,Oratio 4,NA,Lib.,Oratio 4
+tlg2200_tlg00405,Libanius,Oratio 5,NA,Lib.,Oratio 5
+tlg2200_tlg00410,Libanius,Oratio 10,NA,Lib.,Oratio 10
+tlg2200_tlg00411,Libanius,Oratio 11,NA,Lib.,Oratio 11
+tlg2200_tlg00426,Libanius,Oratio 26,NA,Lib.,Oratio 26
+tlg2200_tlg00427,Libanius,Oratio 27,NA,Lib.,Oratio 27
+tlg2200_tlg00428,Libanius,Oratio 28,NA,Lib.,Oratio 28
+tlg2200_tlg00429,Libanius,Oratio 29,NA,Lib.,Oratio 29
+tlg2200_tlg00430,Libanius,Oratio 30,NA,Lib.,Oratio 30
+tlg2200_tlg00431,Libanius,Oratio 31,NA,Lib.,Oratio 31
+tlg2200_tlg00432,Libanius,Oratio 32,NA,Lib.,Oratio 32
+tlg2200_tlg00433,Libanius,Oratio 33,NA,Lib.,Oratio 33
+tlg2200_tlg00434,Libanius,Oratio 34,NA,Lib.,Oratio 34
+tlg2200_tlg00435,Libanius,Oratio 35,NA,Lib.,Oratio 35
+tlg2200_tlg00436,Libanius,Oratio 36,NA,Lib.,Oratio 36
+tlg2200_tlg00437,Libanius,Oratio 37,NA,Lib.,Oratio 37
+tlg2200_tlg00438,Libanius,Oratio 38,NA,Lib.,Oratio 38
+tlg2200_tlg00439,Libanius,Oratio 39,NA,Lib.,Oratio 39
+tlg2200_tlg00440,Libanius,Oratio 40,NA,Lib.,Oratio 40
+tlg2200_tlg00441,Libanius,Oratio 41,NA,Lib.,Oratio 41
+tlg2200_tlg00442,Libanius,Oratio 42,NA,Lib.,Oratio 42
+tlg2200_tlg00443,Libanius,Oratio 43,NA,Lib.,Oratio 43
+tlg2200_tlg00445,Libanius,Oratio 45,NA,Lib.,Oratio 45
+tlg2200_tlg00446,Libanius,Oratio 46,NA,Lib.,Oratio 46
+tlg2200_tlg00447,Libanius,Oratio 47,NA,Lib.,Oratio 47
+tlg2200_tlg00448,Libanius,Oratio 48,NA,Lib.,Oratio 48
+tlg2200_tlg00449,Libanius,Oratio 49,NA,Lib.,Oratio 49
+tlg2200_tlg00450,Libanius,Oratio 50,NA,Lib.,Oratio 50
+tlg2200_tlg00451,Libanius,Oratio 51,NA,Lib.,Oratio 51
+tlg2200_tlg00452,Libanius,Oratio 52,NA,Lib.,Oratio 52
+tlg2200_tlg00453,Libanius,Oratio 53,NA,Lib.,Oratio 53
+tlg2200_tlg00454,Libanius,Oratio 54,NA,Lib.,Oratio 54
+tlg2200_tlg00455,Libanius,Oratio 55,NA,Lib.,Oratio 55
+tlg2200_tlg00456,Libanius,Oratio 56,NA,Lib.,Oratio 56
+tlg2200_tlg00457,Libanius,Oratio 57,NA,Lib.,Oratio 57
+tlg2200_tlg00458,Libanius,Oratio 58,NA,Lib.,Oratio 58
+tlg2200_tlg00459,Libanius,Oratio 59,NA,Lib.,Oratio 59
+tlg2200_tlg00460,Libanius,Oratio 60,NA,Lib.,Oratio 60
+tlg2200_tlg00461,Libanius,Oratio 61,NA,Lib.,Oratio 61
+tlg2200_tlg00462,Libanius,Oratio 62,NA,Lib.,Oratio 62
+tlg2200_tlg00463,Libanius,Oratio 63,NA,Lib.,Oratio 63
+tlg2200_tlg00464,Libanius,Oratio 64,NA,Lib.,Oratio 64
+tlg2200_tlg00501,Libanius,Declamatio 1,NA,Lib.,Declamatio 1
+tlg2200_tlg00502,Libanius,Declamatio 2,NA,Lib.,Declamatio 2
+tlg2200_tlg00503,Libanius,Declamatio 3,NA,Lib.,Declamatio 3
+tlg2200_tlg00504,Libanius,Declamatio 4,NA,Lib.,Declamatio 4
+tlg2200_tlg00505,Libanius,Declamatio 5,NA,Lib.,Declamatio 5
+tlg2200_tlg00506,Libanius,Declamatio 6,NA,Lib.,Declamatio 6
+tlg2200_tlg00507,Libanius,Declamatio 7,NA,Lib.,Declamatio 7
+tlg2200_tlg00508,Libanius,Declamatio 8,NA,Lib.,Declamatio 8
+tlg2200_tlg00509,Libanius,Declamatio 9,NA,Lib.,Declamatio 9
+tlg2200_tlg00510,Libanius,Declamatio 10,NA,Lib.,Declamatio 10
+tlg2200_tlg00511,Libanius,Declamatio 11,NA,Lib.,Declamatio 11
+tlg2200_tlg00512,Libanius,Declamatio 12,NA,Lib.,Declamatio 12
+tlg2200_tlg00513,Libanius,Declamatio13,NA,Lib.,Declamatio13
+tlg2200_tlg00514,Libanius,Declamatio 14,NA,Lib.,Declamatio 14
+tlg2200_tlg00515,Libanius,Declamatio 15,NA,Lib.,Declamatio 15
+tlg2200_tlg00516,Libanius,Declamatio 16,NA,Lib.,Declamatio 16
+tlg2200_tlg00517,Libanius,Declamatio 17,NA,Lib.,Declamatio 17
+tlg2200_tlg00518,Libanius,Declamatio 18,NA,Lib.,Declamatio 18
+tlg2200_tlg00519,Libanius,Declamatio 19,NA,Lib.,Declamatio 19
+tlg2200_tlg00520,Libanius,Declamatio 20,NA,Lib.,Declamatio 20
+tlg2200_tlg00521,Libanius,Declamatio 21,NA,Lib.,Declamatio 21
+tlg2200_tlg00522,Libanius,Declamatio 22,NA,Lib.,Declamatio 22
+tlg2200_tlg00523,Libanius,Declamatio 23,NA,Lib.,Declamatio 23
+tlg2200_tlg00524,Libanius,Declamatio 24,NA,Lib.,Declamatio 24
+tlg2200_tlg00525,Libanius,Declamatio 25,NA,Lib.,Declamatio 25
+tlg2200_tlg00526,Libanius,Declamatio 26,NA,Lib.,Declamatio 26
+tlg2200_tlg00527,Libanius,Declamatio 27,NA,Lib.,Declamatio 27
+tlg2200_tlg00528,Libanius,Declamatio 28,NA,Lib.,Declamatio 28
+tlg2200_tlg00529,Libanius,Declamatio 29,NA,Lib.,Declamatio 29
+tlg2200_tlg00530,Libanius,Declamatio 30,NA,Lib.,Declamatio 30
+tlg2200_tlg00531,Libanius,Declamatio 31,NA,Lib.,Declamatio 31
+tlg2200_tlg00532,Libanius,Declamatio 32,NA,Lib.,Declamatio 32
+tlg2200_tlg00533,Libanius,Declamatio 33,NA,Lib.,Declamatio 33
+tlg2200_tlg00534,Libanius,Declamatio 34,NA,Lib.,Declamatio 34
+tlg2200_tlg00535,Libanius,Declamatio 35,NA,Lib.,Declamatio 35
+tlg2200_tlg00536,Libanius,Declamatio 36,NA,Lib.,Declamatio 36
+tlg2200_tlg00537,Libanius,Declamatio 37,NA,Lib.,Declamatio 37
+tlg2200_tlg00538,Libanius,Declamatio 38,NA,Lib.,Declamatio 38
+tlg2200_tlg00539,Libanius,Declamatio 39,NA,Lib.,Declamatio 39
+tlg2200_tlg00540,Libanius,Declamatio 40,NA,Lib.,Declamatio 40
+tlg2200_tlg00541,Libanius,Declamatio 41,NA,Lib.,Declamatio 41
+tlg2200_tlg00542,Libanius,Declamatio 42,NA,Lib.,Declamatio 42
+tlg2200_tlg00543,Libanius,Declamatio 43,NA,Lib.,Declamatio 43
+tlg2200_tlg00544,Libanius,Declamatio 44,NA,Lib.,Declamatio 44
+tlg2200_tlg00545,Libanius,Declamatio 45,NA,Lib.,Declamatio 45
+tlg2200_tlg00546,Libanius,Declamatio 46,NA,Lib.,Declamatio 46
+tlg2200_tlg00547,Libanius,Declamatio 47,NA,Lib.,Declamatio 47
+tlg2200_tlg00548,Libanius,Declamatio 48,NA,Lib.,Declamatio 48
+tlg2200_tlg00549,Libanius,Declamatio 49,NA,Lib.,Declamatio 49
+tlg2200_tlg00550,Libanius,Declamatio 50,NA,Lib.,Declamatio 50
+tlg2200_tlg008,Libanius,Characteres Epistolici [Sp.],NA,Lib.,Char.
+tlg2233_tlg001,Polemo Physiognomonicus,Physiognomonica,"Scriptores physiognomonici Graeci et Latini i,",Polemo,Physiognomonica
+tlg2371_tlg001,Chronicon Paschale,NA,NA,Chronicon Paschale,Chronicon Paschale
+tlg2703_tlg001,Anna Comnena,Alexias,none,Anna Comnena,Alexias
+tlg2733_tlg001,"Evagrius, Scholasticus",Historia Ecclesiastica,NA,Evagrius,Hist. eccl.
+tlg2768_tlg001,Gelasius,Historia ecclesiastica,none,Gelasius,Hist. eccl.
+tlg2806_tlg001,Marcus Diaconus,Vita Porphyrii episcopi Gazensis,none,Marcus Diaconus,Porph.
+tlg2959_tlg001,Methodius,Symposium sive Convivium decem virginum,none,Methodius,Symp.
+tlg2959_tlg002,Methodius,De libero arbitrio,none,Methodius,De libero arbitrio
+tlg2959_tlg003,Methodius,De resurrectione,none,Methodius,De resurrectione
+tlg2959_tlg004,Methodius,De lepra ad Sistelium,none,Methodius,De lepra ad Sistelium
+tlg2959_tlg005,Methodius,"De Creatis (Fragmenta Ap. Photium, Bibl. Cod. 235)",none,Methodius,De Creatis
+tlg2959_tlg007,Methodius,Fragmenta In Job (In Catenis),none,Methodius,Frag. In Job
+tlg3118_tlg001,Sindbad the Philosopher,Ιστορικον Συντιπα του Φιλοσοφου Ωραιοτατον Πανυ,NA,Sindbad,Hist.
+tlg3118_tlg002,Sindbad the Philosopher,Narrationes de Syntipa,NA,Sindbad,Narr.
+tlg3135_tlg001,Joannes Zonaras,Epitome historiarum (lib. 1‑12),none,Zonar.,Epit.
+tlg3135_tlg004,Joannes Zonaras,Argumenta,NA,Zonar.,Arg.
+tlg3156_tlg001,Anonymi Exegesis in Hesiodi Theogoniam,Anonymi Exegesis in Hesiodi Theogoniam,NA,Anon.,Exeg. in Hesiod.
+tlg4003_tlg001,Marcianus Geographus,Periplus maris exteri,Marcian.Peripl. (GGM i p. 515.),Marcianus,Mar. Ext.
+tlg4003_tlg002,Marcianus Geographus,Menippi periplus maris interni (epitome Marciani),none,Simpl.,Mar. Int.
+tlg4013_tlg001,Simplicius Philosophus,in Aristotelis de Caelo commentaria,Simp. in Cael.,Simpl.,In Cael.
+tlg4013_tlg003,Simplicius Philosophus,"in Aristotelis Categorias commentarium,",Simp. in Cat.,Simpl.,In Cat.
+tlg4013_tlg004,Simplicius Philosophus,in Aristotelis Physica commentaria,Simp. in Ph.,Simpl.,in Ph.
+tlg4013_tlg005,Simplicius Philosophus,in libros Aristotelis de Anima commentaria,Simp. in de An.,Simpl.,in de An.
+tlg4015_tlg001,"Philoponus, Joannes Philosophus",Philoponi (olim Ammonii) in Aristotelis Categorias commentarium,Phlp. in Cat.,Philoponus,In Cat.
+tlg4015_tlg002,"Philoponus, Joannes Philosophus",in Aristotelis Analytica Priora commentaria,Phlp. in APr.,Philoponus,in APr.
+tlg4015_tlg004,"Philoponus, Joannes Philosophus",in Aristotelis Analytica Posteriora commentaria,Phlp.in APo.,Philoponus,in APo.
+tlg4015_tlg005,"Philoponus, Joannes Philosophus",in Aristotelis Meteorologicorum librum primum commentarium,Phlp. in Mete.,Philoponus,in Mete.
+tlg4015_tlg006,"Philoponus, Joannes Philosophus",in Aristotelis libros de Generatione et Corruptione commentaria,Phlp. in GC,Philoponus,in GC
+tlg4015_tlg007,"Philoponus, Joannes Philosophus",Philoponi (Michaelis Ephesii) in libros de Generatione Animalium commentaria,Phlp. in GA,Philoponus,in GA
+tlg4015_tlg008,"Philoponus, Joannes Philosophus",in Aristotelis de Anima libros commentaria,Phlp. in de An.,Philoponus,in de An.
+tlg4015_tlg009,"Philoponus, Joannes Philosophus",in Aristotelis Physica commentaria,Phlp. in Ph.,Philoponus,in Ph.
+tlg4016_tlg001,Ammonius Philosophus,in Porphyrii Isagogen sive V voces,Ammon. in Porph.,Ammon. Phil.,in Porph.
+tlg4016_tlg002,Ammonius Philosophus,in Aristotelis Categorias commentarius,Ammon. in Cat.,Ammon. Phil.,in Cat.
+tlg4016_tlg003,Ammonius Philosophus,in Aristotelis de Interpretatione commentarius,Ammon. in. Int.,Ammon. Phil.,In int.
+tlg4016_tlg004,Ammonius Philosophus,in Aristotelis Analyticorum Priorum librum I commentarium,Ammon. in APr.,Ammon. Phil.,in APr.
+tlg4017_tlg001,Syrianus Philosophus et Rhetor,In Aristotelis metaphysica commentaria,Syrian. in. Metaph.,Syrianus,in Metaph.
+tlg4018_tlg001,Asclepius Philosophus,In Aristotelis metaphysicorum libros A‑Z commentaria,Ascl. in Metaph.,Asclep. Phil.,in Metaph.
+tlg4019_tlg001,Olympiodorus Philosophus,Prolegomena,Olymp.Proll.,Olympiodorus,Prol.
+tlg4019_tlg002,Olympiodorus Philosophus,in Categorias commentarium,Olymp. in Cat.,Olympiodorus,in Cat.
+tlg4019_tlg003,Olympiodorus Philosophus,in Aristotelis Meteora commentaria,Olymp. in Mete.,Olympiodorus,in mete.
+tlg4020_tlg001,Elias Philosophus,in Porphyrii Isagogen commentaria,Elias in Porph.,Elias Phil.,in Porph.
+tlg4020_tlg002,Elias Philosophus,in Aristotelis Categorias commentaria,Elias in Cat.,Elias Phil.,in Cat.
+tlg4021_tlg001,David Philosophus,Prolegomena Philosophiae,Proll.,David Phil.,Prol.
+tlg4021_tlg002,David Philosophus,in Porphyrii Isagogen commentarium,in Porph.,David Phil.,in Porph.
+tlg4024_tlg001,Agathias Historicus et Epigrammaticus,Historiae,HGM ii p. 132.,Agathias,Hist.
+tlg4024_tlg002,Agathias Historicus et Epigrammaticus,Epigrammata,Anthologia Graeca,Agathias,Epig.
+tlg4027_tlg001,Anonymus vel Anonymi,Anonymi in Aristotelis Categorias paraphrasis,Anon. in. Cat.,Anon.,in Cat.
+tlg4030_tlg001,Sophonias Philosophus,in libros Aristotelis de Anima paraphrasis,Soph. in de An.,Sophonias,in de An.
+tlg4031_tlg002,Eustratius Philosophus,in Ethica Nicomachea commentaria,Eustr. in En.,Eustratius,in EN
+tlg4033_tlg003,Heliodorus Philosophus,in Ethica Nicomachea paraphrasis,Heliod. in EN.,Heliod. Phil.,in EN
+tlg4034_tlg002,Michael Ephesius Philosophus,in Parva Naturalia commentaria,Mich. in PN,Mich. Eph.,in PN
+tlg4034_tlg003,Michael Ephesius Philosophus,in libros de Partibus Animalium,Mich. in PA,Mich. Eph.,in PA
+tlg4034_tlg006,Michael Ephesius Philosophus,In librum quintum ethicorum Nicomacheorum commentarium,Mich. in EN,Mich. Eph.,in EN
+tlg4036_tlg001,Proclus Philosophus,in Platonis Rem publicam commentarii,Procl. in R.,Procl.,In R.
+tlg4075_tlg002,Marinus Biographus,Commentarium in Euclidis data,none,Marin. Biog.,In Euclid. dat.
+tlg4084_tlg001,Zosimus Historicus,Historia Nova,none,Zos.,Zos.
+tlg4089_tlg003,Theodoretus,Historia ecclesiastica,none,Theodoretus,Hist. Eccl.
+tlg4089_tlg004,Theodoretus,Historia religiosa (= Philotheus),none,Theodoretus,Hist. Rel.
+tlg4090_tlg001,Cyril of Alexandria,Commentarius in xii prophetas minores,none,Cyril. Alex.,Proph. Minor.
+tlg4102_tlg001,CatenaNT,In Matthaeum,NA,CatenaNT,In Matthaeum
+tlg4102_tlg002,CatenaNT,In Marcum,NA,CatenaNT,In Marcum
+tlg4102_tlg003,CatenaNT,Suppl. Matt.,NA,CatenaNT,Suppl. Matt.
+tlg4102_tlg004,CatenaNT,In Lucam,NA,CatenaNT,In Lucam
+tlg4102_tlg005,CatenaNT,In Joannem,NA,CatenaNT,In Joannem
+tlg4102_tlg006,CatenaNT,Suppl. Luc.,NA,CatenaNT,Suppl. Luc.
+tlg4102_tlg008,CatenaNT,In Acta,NA,CatenaNT,In Acta
+tlg4102_tlg010,CatenaNT,In Epistulam Ad Romanos,NA,CatenaNT,In Epistulam Ad Romanos
+tlg4102_tlg011,CatenaNT,In Epistulam Ad Romanos,NA,CatenaNT,In Epistulam Ad Romanos
+tlg4102_tlg012,CatenaNT,In Epistulam I Ad Corinthios,NA,CatenaNT,In Epistulam I Ad Corinthios
+tlg4102_tlg013,CatenaNT,In Epistulam II Ad Corinthios,NA,CatenaNT,In Epistulam II Ad Corinthios
+tlg4102_tlg019,CatenaNT,In Epistulam Ad Galatas,NA,CatenaNT,In Epistulam Ad Galatas
+tlg4102_tlg020,CatenaNT,In Epistulam Ad Ephesios,NA,CatenaNT,In Epistulam Ad Ephesios
+tlg4102_tlg021,CatenaNT,In Epistulam Ad Philippenses,NA,CatenaNT,In Epistulam Ad Philippenses
+tlg4102_tlg022,CatenaNT,In Epistulam Ad Colossenses,NA,CatenaNT,In Epistulam Ad Colossenses
+tlg4102_tlg023,CatenaNT,In Epistulam I Ad Thessalonicenses,NA,CatenaNT,In Epistulam I Ad Thessalonicenses
+tlg4102_tlg024,CatenaNT,In Epistulam II Ad Thessalonicenses,NA,CatenaNT,In Epistulam II Ad Thessalonicenses
+tlg4102_tlg034,CatenaNT,In Epistulam I Ad Timotheum,NA,CatenaNT,In Epistulam I Ad Timotheum
+tlg4102_tlg035,CatenaNT,In Epistulam II Ad Timotheum,NA,CatenaNT,In Epistulam II Ad Timotheum
+tlg4102_tlg036,CatenaNT,In Epistulam Ad Titum,NA,CatenaNT,In Epistulam Ad Titum
+tlg4102_tlg037,CatenaNT,In Epistulam Ad Philemonem,NA,CatenaNT,In Epistulam Ad Philemonem
+tlg4102_tlg038,CatenaNT,In Epistulam Ad Hebraeos,NA,CatenaNT,In Epistulam Ad Hebraeos
+tlg4102_tlg040,CatenaNT,In Epistulam Jacobi,NA,CatenaNT,In Epistulam Jacobi
+tlg4102_tlg041,CatenaNT,in epistulam Petri i,NA,CatenaNT,in epistulam Petri i
+tlg4102_tlg042,CatenaNT,in epistulam Petri ii,NA,CatenaNT,in epistulam Petri ii
+tlg4102_tlg043,CatenaNT,In epistulam Joannis i,NA,CatenaNT,In epistulam Joannis i
+tlg4102_tlg046,CatenaNT,in epistulam Juda,NA,CatenaNT,in epistulam Juda
+tlg4102_tlgX02,CatenaNT,In Apocalypsin,NA,CatenaNT,In Apocalypsin
+tlg4102_tlgX03,CatenaNT,In Apocalypsin,NA,CatenaNT,In Apocalypsin
+tlg4193_tlg012,Anonymus vel Anonymi,in Sophisticos Elenchos paraphrasis,Anon. in SE.,Anon.,in SE
+tlg5022_tlg002,Scholia in Euclidem,Scholia in Euclidis data (scholia vetera),NA,Schol. Eucl.,In Euclid. dat.
+tlg5023_tlg010,Scholia Euripidem,Vitae Euripidis,NA,Schol. Eur.,V. Eur.
+tlg5023_tlg011,Scholia Euripidem,in Euripidis Rhesum,NA,Schol. Eur.,In Rhes.
+tlg5023_tlg012,Scholia Euripidem,in Euripidis Troiades,NA,Schol. Eur.,In Tro.
+tlg5023_tlg013,Scholia Euripidem,in Euripidis Hippolytum,NA,Schol. Eur.,In Hipp.
+tlg5026_tlg001,Scholia,Scholia in Homeri Iliadem,none,Schol.Hom.,In Ill.
+tlg5026_tlg007,Scholia,Scholia in Homeri Odysseam,none,Schol.Hom.,In Od.
+tlg5034_tlg001a,Scholia in Pindarum,Olympian Odes,NA,Schol.Pin.,Olympian
+tlg5034_tlg001b,Scholia in Pindarum,Pythian Odes,NA,Schol.Pin.,Pythian
+tlg5034_tlg001c,Scholia in Pindarum,Nemean Odes,NA,Schol.Pin.,Nemean
+tlg5034_tlg001d,Scholia in Pindarum,Isthmian Odes,NA,Schol.Pin.,Isthmian
+tlg9004_tlg001,Anonymi In Aristotelis Librum Alterum Analyticorum Posteriorum,NA,NA,Anon.,in APII
+tlg9006_tlg011,GregoriusLibanius,Orationes XIII-XXX,NA,GregoriusLibanius,Or. XIII-XXX
+tlg9019_tlg001,Stephanus  Philosophus,in librum Aristotelis de Interpretatione commentarium,Steph. in Int.,Steph. Phil.,in Int.

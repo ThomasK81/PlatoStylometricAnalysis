@@ -1,6 +1,6 @@
 "Euclidean" "Jaccard" "BurrowsDelta" "EdersSimple" "Cosine" "CosineDelta" "EdersDelta" "ArgamonsDelta" "t-SNE"
 "1000WekaWord" 0 0 0 0 0 4 0 0 0
-"500WekaWord" 0 0 0 0 0 0 0 7 0
-"300WekaWord" 0 0 0 1 1 0 0 0 0
-"200WekaWord" 1 0 0 2 0 2 0 1 0
-"100WekaWord" 0 1 2 1 1 4 0 5 0
+"500WekaWord" 0 1 0 0 0 0 0 8 0
+"300WekaWord" 0 0 0 1 0 0 0 0 0
+"200WekaWord" 0 0 0 0 0 2 2 3 0
+"100WekaWord" 0 1 2 1 0 4 2 0 0

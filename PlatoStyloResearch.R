@@ -1,5 +1,7 @@
 # dependencies
 
+library(tidyverse)
+library(ggrepel)
 library(data.table)
 library(philentropy)
 library(ape)
@@ -241,6 +243,8 @@ alltexts$text <- foreach(i = alltexts$text, .combine = c) %dopar% deleteNonGreek
 alltexts$wordcount <- foreach(i = alltexts$text, .combine = c) %dopar% wordcount(i) 
 registerDoSEQ()
 
+## 1,044 works in the corpus, 23,260,364 words of Greek.
+
 # remove works < 1500, smallest CP work just over 1500
 alltexts <- alltexts[-which(alltexts$wordcount < 1500),]
 
@@ -270,6 +274,8 @@ dupvector <- unique(dupvector)
 # remove duplicates
 
 alltexts <- alltexts[-dupvector,]
+
+#22,249,820 words
 
 for (i in 1:length(alltexts$Work)) {
   filestring <- paste(unlist(strsplit(alltexts$Work[i], ".", fixed = T))[1:2], collapse = "_")
@@ -364,16 +370,48 @@ feature2$feature <- gsub("X.", "", feature2$feature, fixed = T)
 feature2 <- feature2[c(length(colnames(feature2)), c(1:length(colnames(feature2))-1))]
 frequencies <- feature2
 
+#### start here #####
 # testfrequencies usually 1000, 500, 300, 200,100 
 # but with MenexenusMFW it is 810, 500, 300, 200, 100
 # with Weka4Grams it's 859,500,300,200,100
+# frequencies for Weka 4-Gram from above
+# frequencies for Weka Word from above
+# frequencies for "Just Menexenus MFW" from above
+# frequencies for "Just Menexenus 4Gram" from above
+# frequencies for 4Gram in Stylo_4Gram_frequencies.txt
+# frequencies for MFW in Stylo_Word_frequencies.txt
 
-filebase <- "MenexMFW"
-testfrequencies <- c(810, 500, 300, 200, 100)
+frequencies <- fread("Stylo_4Gram_frequencies.txt")
 
+filebase <- "MF4Gram"
+testfrequencies <- c(1000, 500, 300, 200, 100)
 
-## big test
+## generate tsne, trees, etc. ####
 
+# read meta
+worksmeta <- read_csv("WorksMetadata.csv")
+simpleCap <- function(x) {
+  s <- strsplit(x, " ")[[1]]
+  paste(toupper(substring(s, 1,1)), substring(s, 2),
+        sep="", collapse=" ")
+}
+
+worksmeta <- worksmeta %>% 
+  mutate(OCDWork = map_chr(OCDWork, simpleCap),
+         OCDAuthor = map_chr(OCDAuthor, simpleCap))
+
+worksmeta <- worksmeta %>%
+  mutate(OCDWork = gsub(" ", "", worksmeta$OCDWork),
+         OCDAuthor = gsub(" ", "", worksmeta$OCDAuthor),
+         ShortTitle = paste(OCDAuthor, OCDWork, sep = "_"))
+
+pullShortTitle <- function(x) {
+  worksmeta %>% filter(ShortID == x) %>% pull(ShortTitle)
+}
+
+pullShortAuthor <- function(x) {
+  worksmeta %>% filter(str_detect(ShortID, x)) %>% slice(1) %>% pull(OCDAuthor)
+}
 
 frequenciesnames <- frequencies$feature
 frequencies <- data.frame(frequencies)
@@ -381,9 +419,42 @@ works <- colnames(frequencies)
 works <- works[2:length(works)]
 authors <- unique(sapply(works, function(x) {unlist(strsplit(x, "_"))[1]}))
 platoworks <- works[grep("tlg0059_", works)]
+
+xenophonworks <- c(works[grep("tlg0032_", works)], "tlg0059_tlg028")
+lucianworks <- c(works[grep("tlg0062_", works)], "tlg0059_tlg028")
+isocratesworks <- c(works[grep("tlg0010_", works)], "tlg0059_tlg028")
+libaniusworks <- c(works[grep("tlg2200_", works)], "tlg0059_tlg028")
+lysiasworks <- c(works[grep("tlg0540_", works)], "tlg0059_tlg028")
+demosthenesworks <- c(works[grep("tlg0014_", works)], "tlg0059_tlg028")
+
 platomatrix <- matrix(0L, nrow = length(platoworks), ncol = length(platoworks))
 rownames(platomatrix) <- platoworks
 colnames(platomatrix) <- platoworks
+
+xenophonmatrix <- matrix(0L, nrow = length(xenophonworks), ncol = length(xenophonworks))
+rownames(xenophonmatrix) <- xenophonworks
+colnames(xenophonmatrix) <- xenophonworks
+
+lucianmatrix <- matrix(0L, nrow = length(lucianworks), ncol = length(lucianworks))
+rownames(lucianmatrix) <- lucianworks
+colnames(lucianmatrix) <- lucianworks
+
+isocratesmatrix <- matrix(0L, nrow = length(isocratesworks), ncol = length(isocratesworks))
+rownames(isocratesmatrix) <- isocratesworks
+colnames(isocratesmatrix) <- isocratesworks
+
+libaniusmatrix <- matrix(0L, nrow = length(libaniusworks), ncol = length(libaniusworks))
+rownames(libaniusmatrix) <- libaniusworks
+colnames(libaniusmatrix) <- libaniusworks
+
+lysiasmatrix <- matrix(0L, nrow = length(lysiasworks), ncol = length(lysiasworks))
+rownames(lysiasmatrix) <- lysiasworks
+colnames(lysiasmatrix) <- lysiasworks
+
+demosthenesmatrix <- matrix(0L, nrow = length(demosthenesworks), ncol = length(demosthenesworks))
+rownames(demosthenesmatrix) <- demosthenesworks
+colnames(demosthenesmatrix) <- demosthenesworks
+
 measurenames <- c("Euclidean", "Jaccard", "BurrowsDelta", "EdersSimple", "Cosine", "CosineDelta", "EdersDelta", "ArgamonsDelta", "t-SNE")
 measurematrix <- matrix(, nrow = length(testfrequencies), ncol = length(measurenames))
 rownames(measurematrix) <- paste(testfrequencies, filebase, sep="")
@@ -392,6 +463,7 @@ platodetected <- measurematrix
 menexenuscompanion <- measurematrix
 
 for (j in 1:length(testfrequencies)) {
+  print(testfrequencies[j])
   testdf <- frequencies[1:testfrequencies[j],]
   testnames <- frequenciesnames[1:testfrequencies[j]]
   tester <- t(testdf[,c(2:length(testdf[1,]))])
@@ -415,15 +487,15 @@ for (j in 1:length(testfrequencies)) {
   tsneMat <- tsne_model_1$Y
   rownames(tsneMat) <- works
   
-  fit1 <- hclust(d, method="ward.D") 
-  fit2 <- hclust(dd, method="ward.D")
-  fit3 <- hclust(delta, method="ward.D")
-  fit4 <- hclust(edersimple, method = "ward.D")
-  fit5 <- hclust(cosine, method = "ward.D")
-  fit6 <- hclust(cosineDelta, method = "ward.D")
-  fit7 <- hclust(ederDelta, method = "ward.D")
-  fit8 <- hclust(argamonDelta, method = "ward.D")
-  fit9 <- hclust(dist(tsneMat), method = "ward.D")
+  fit1 <- hclust(d, method="ward.D2") 
+  fit2 <- hclust(dd, method="ward.D2")
+  fit3 <- hclust(delta, method="ward.D2")
+  fit4 <- hclust(edersimple, method = "ward.D2")
+  fit5 <- hclust(cosine, method = "ward.D2")
+  fit6 <- hclust(cosineDelta, method = "ward.D2")
+  fit7 <- hclust(ederDelta, method = "ward.D2")
+  fit8 <- hclust(argamonDelta, method = "ward.D2")
+  fit9 <- hclust(dist(tsneMat), method = "ward.D2")
   
   clusters <- vector("list", 8)
   clusters[[1]] <- fit1
@@ -439,7 +511,6 @@ for (j in 1:length(testfrequencies)) {
   for (m in 1:length(clusters)) {
     testfit <- clusters[[m]]
     fileName <- paste0("plots/", filebase, testfrequencies[j], measurenames[m], ".png")
-    png(filename = fileName, width = 6400, height = 4930)
     
     if (m != 9) {
     phylo_fit <- as.phylo(testfit)
@@ -455,35 +526,40 @@ for (j in 1:length(testfrequencies)) {
       return(result)
     }
     
-    
     phylo_fit$tip.color <- sapply(phylo_fit$tip.label, assigncolors) 
     
     cladePlatobranches <- which.edge(phylo_fit, phylo_fit$tip.label[grep("tlg0059_", phylo_fit$tip.label)])
     clcolr <- rep("darkgrey", dim(phylo_fit$edge)[1])
     clcolr[cladePlatobranches] <- "red"
     
+    phylo_fit$tip.label <- map_chr(phylo_fit$tip.label, pullShortTitle)
+    
+    png(filename = fileName, width = 9600, height = 7395)
     plot(phylo_fit, tip.color = phylo_fit$tip.color, type = "fan", edge.color=clcolr, edge.width=4)
     nodenames <- vector()
+    dev.off()
     
     } else {
       
       worksTSNE <- rownames(tester)
       Legend <- gsub("(.*)_.*", "\\1", worksTSNE, perl = T)
       alphascale <- grepl(pattern = "tlg0059", x = unique(Legend))
-      worksTSNE <- gsub(pattern = "tlg0059_", replacement = "PLATO_", worksTSNE)
-      
+      # worksTSNE <- gsub(pattern = "tlg0059_", replacement = "PLATO_", worksTSNE)
+      worksTSNE <- worksmeta$ShortTitle
       
       for (i in 1:length(platocolor)) {
         if (alphascale[i] == TRUE) {
           platocolor[i] <- "#000000FF"
         } else {
-          platocolor[i] <- alpha(platocolor[i], .25)
+          platocolor[i] <- alpha(platocolor[i], .5)
         }
       }
       
+      png(filename = fileName, width = 6400, height = 4930)
       ggplotgraph <- ggplot(d_tsne_1, aes(x=V1, y=V2, color = Legend)) +
         geom_point(size=4) +
-        geom_text(aes(label=worksTSNE), vjust=3, hjust=0.5) + 
+        # geom_text(aes(label=worksTSNE), vjust=3, hjust=0.5) +
+        geom_label_repel(aes(label=worksTSNE)) +
         guides(colour=guide_legend(override.aes=list(size=4))) +
         xlab("") + ylab("") +
         theme_light(base_size=20) +
@@ -492,10 +568,8 @@ for (j in 1:length(testfrequencies)) {
         theme(legend.position="none") +
         scale_colour_manual(values=platocolor)
       print(ggplotgraph)
-      
+      dev.off() 
     }
-    
-    dev.off()
     
     groups <- cutree(testfit, k=length(authors))
     menexenusGroup <- groups["tlg0059_tlg028"]
@@ -504,6 +578,29 @@ for (j in 1:length(testfrequencies)) {
     PlatoGroups <- groups[which(names(groups) == "tlg0059")]
     PlatoGroups <- unique(PlatoGroups)
     
+    XenophonGroups <- groups[which(names(groups) == "tlg0032")]
+    XenophonGroups <- c(XenophonGroups, menexenusGroup)
+    XenophonGroups <- unique(XenophonGroups)
+    
+    LucianGroups <- groups[which(names(groups) == "tlg0062")]
+    LucianGroups <- c(LucianGroups, menexenusGroup)
+    LucianGroups <- unique(LucianGroups)
+    
+    IsocratesGroups <- groups[which(names(groups) == "tlg0010")]
+    IsocratesGroups <- c(IsocratesGroups, menexenusGroup)
+    IsocratesGroups <- unique(IsocratesGroups)
+    
+    LibaniusGroups <- groups[which(names(groups) == "tlg2200")]
+    LibaniusGroups <- c(LibaniusGroups, menexenusGroup)
+    LibaniusGroups <- unique(LibaniusGroups)
+    
+    LysiasGroups <- groups[which(names(groups) == "tlg0540")]
+    LysiasGroups <- c(LysiasGroups, menexenusGroup)
+    LysiasGroups <- unique(LysiasGroups)
+    
+    DemosthenesGroups <- groups[which(names(groups) == "tlg0014")]
+    DemosthenesGroups <- c(DemosthenesGroups, menexenusGroup)
+    DemosthenesGroups <- unique(DemosthenesGroups)
     
     clusterMain <- vector()
     clusterMainPercentage <- vector()
@@ -517,6 +614,7 @@ for (j in 1:length(testfrequencies)) {
       clusterMemberCount[i] <- count
       if (i == menexenusGroup) {
         platodetected[j,m] <- length(grep("tlg0059", names(which(groups == i)))) - 1
+        names(subgroup) <- map_chr(paste0(names(subgroup), "_"), pullShortAuthor)
         menexvalue <- paste0(names(subgroup), "(", subgroup, ")", collapse = "/")
         menexenuscompanion[j,m] <- menexvalue
       }
@@ -539,6 +637,91 @@ for (j in 1:length(testfrequencies)) {
         }
       }
     }
+    
+    for (q in 1:length(XenophonGroups)) {
+      members <- names(which(groups == XenophonGroups[q]))
+      members <- members[members %in% xenophonworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(xenophonmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(xenophonmatrix) == members[o])
+          value <- xenophonmatrix[rowIndex, colIndex]
+          value <- value + 1
+          xenophonmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
+    for (q in 1:length(LucianGroups)) {
+      members <- names(which(groups == LucianGroups[q]))
+      members <- members[members %in% lucianworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(lucianmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(lucianmatrix) == members[o])
+          value <- lucianmatrix[rowIndex, colIndex]
+          value <- value + 1
+          lucianmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
+    for (q in 1:length(IsocratesGroups)) {
+      members <- names(which(groups == IsocratesGroups[q]))
+      members <- members[members %in% isocratesworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(isocratesmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(isocratesmatrix) == members[o])
+          value <- isocratesmatrix[rowIndex, colIndex]
+          value <- value + 1
+          isocratesmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
+    for (q in 1:length(LibaniusGroups)) {
+      members <- names(which(groups == LibaniusGroups[q]))
+      members <- members[members %in% libaniusworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(libaniusmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(libaniusmatrix) == members[o])
+          value <- libaniusmatrix[rowIndex, colIndex]
+          value <- value + 1
+          libaniusmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
+    for (q in 1:length(LysiasGroups)) {
+      members <- names(which(groups == LysiasGroups[q]))
+      members <- members[members %in% lysiasworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(lysiasmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(lysiasmatrix) == members[o])
+          value <- lysiasmatrix[rowIndex, colIndex]
+          value <- value + 1
+          lysiasmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
+    for (q in 1:length(DemosthenesGroups)) {
+      members <- names(which(groups == DemosthenesGroups[q]))
+      members <- members[members %in% demosthenesworks]
+      for (p in 1:length(members)) {
+        rowIndex <- which(rownames(demosthenesmatrix) == members[p])
+        for (o in 1:length(members)) {
+          colIndex <- which(rownames(demosthenesmatrix) == members[o])
+          value <- demosthenesmatrix[rowIndex, colIndex]
+          value <- value + 1
+          demosthenesmatrix[rowIndex, colIndex] <- value
+        }
+      }
+    }
+    
   }
 }
 
@@ -547,8 +730,8 @@ png(filename = fileName, width = 640, height = 493)
 
 melted_plato <- melt(platomatrix)
 melted_plato$value <- melted_plato$value / 45 
-melted_plato$Var1 <- gsub("tlg0059_", "", melted_plato$Var1)
-melted_plato$Var2 <- gsub("tlg0059_", "", melted_plato$Var2)
+melted_plato$Var1 <- map_chr(melted_plato$Var1, pullShortTitle)
+melted_plato$Var2 <- map_chr(melted_plato$Var2, pullShortTitle)
 
 ggplotgraph <- ggplot(melted_plato , aes(x = Var1, y = Var2)) +
   geom_raster(aes(fill = value)) +
@@ -569,19 +752,33 @@ png(filename = fileName, width = 640, height = 493)
 platoworksScore <- vector("numeric", length(platoworks))
 names(platoworksScore) <- platoworks
 for (i in 1:length(platoworks)) {
-  platoworksScore[platoworks[i]] <- mean(platomatrix[platoworks[i],]/40)
+  platoworksScore[platoworks[i]] <- mean(platomatrix[platoworks[i],]/45)
 }
 
 platoworksScore <- sort(platoworksScore, decreasing = F)
-datNamedVec <- data.frame(work = names(platoworksScore), score = platoworksScore)
+names(platoworksScore) <- map_chr(names(platoworksScore), pullShortTitle)
+datNamedVec <- tibble(work = names(platoworksScore), score = platoworksScore)
 datNamedVec$work <- factor(datNamedVec$work, levels = datNamedVec$work) 
 
-ggplotgraph <- ggplot(datNamedVec, aes(x=factor(work), weight=score)) + geom_bar() + coord_flip() +
+ggplotgraph <- ggplot(datNamedVec, aes(x=factor(work), weight=score)) + geom_bar(width=0.2) + coord_flip() +
   ylab("Mean Correlation") + xlab("Corpus Platonicum") +
-  theme_tufte(base_size = 12)
+  theme_tufte(base_size = 14)
 
 print(ggplotgraph)
 
+dev.off()
+
+fileName <- paste0("plots/", filebase, "MeanCorrelationLollipop", ".png")
+png(filename = fileName, width = 800, height = length(datNamedVec$work)*20)
+
+ggplot(datNamedVec, aes(score, factor(work), label = round(score, 2))) +
+  geom_segment(aes(x = 0, y = factor(work), xend = score, yend = factor(work))) +
+  geom_point() +
+  geom_text(nudge_x = 0.015) +
+  xlab("Mean Correlation") + ylab("Corpus Platonicum") +
+  xlim(0, 0.5) +
+  theme_tufte(base_size = 18)
+  
 dev.off()
 
 fileName <- paste0("plots/", filebase, "CorrelationB", ".png")
@@ -598,8 +795,10 @@ png(filename = fileName, width = 640, height = 493)
 
 melted_plato <- melt(corRaw)
 melted_plato$value <- melted_plato$value 
-melted_plato$Var1 <- gsub("tlg0059_", "", melted_plato$Var1)
-melted_plato$Var2 <- gsub("tlg0059_", "", melted_plato$Var2)
+#melted_plato$Var1 <- gsub("tlg0059_", "", melted_plato$Var1)
+#melted_plato$Var2 <- gsub("tlg0059_", "", melted_plato$Var2)
+melted_plato$Var1 <- map_chr(melted_plato$Var1, pullShortTitle)
+melted_plato$Var2 <- map_chr(melted_plato$Var2, pullShortTitle)
 
 ggplotgraph <- ggplot(melted_plato , aes(x = Var1, y = Var2)) +
   geom_raster(aes(fill = value)) +
@@ -618,6 +817,8 @@ fileName <- paste0("plots/", filebase, "Dissimilarity", ".png")
 png(filename = fileName, width = 640, height = 493)
 
 dissimilarity <- 1 - abs(cor(platomatrix))
+rownames(dissimilarity) <- map_chr(rownames(dissimilarity), pullShortTitle)
+colnames(dissimilarity) <- map_chr(colnames(dissimilarity), pullShortTitle)
 distance <- as.dist(dissimilarity)
 
 plot(hclust(distance), 
@@ -672,11 +873,119 @@ dev.off()
 fileName <- paste0("tables/", filebase, "MenexenusCluster", ".csv")
 write.table(menexenuscompanion, file = fileName)
 
-###### Viz for PlatoFrequencies
+### viz for other authors ####
+
+# Xenophon, Lucian, Isocrates, Lysias, Libanius, Demosthenes
+
+other <- "Xenophon"
+othermatrix <- xenophonmatrix
+otherworks <- xenophonworks
+
+corRaw <- cor(othermatrix)
+
+fileName <- paste0("plots/", filebase, other, "CorrelationA", ".png")
+png(filename = fileName, width = 640, height = 493)
+
+melted_other <- melt(othermatrix)
+melted_other$value <- melted_other$value / 45 
+# melted_other$Var1 <- gsub("tlg0059_", "", melted_other$Var1)
+# melted_other$Var2 <- gsub("tlg0059_", "", melted_other$Var2)
+melted_other$Var1 <- map_chr(melted_other$Var1, pullShortTitle)
+melted_other$Var2 <- map_chr(melted_other$Var2, pullShortTitle)
+
+ggplotgraph <- ggplot(melted_other , aes(x = Var1, y = Var2)) +
+  geom_raster(aes(fill = value)) +
+  scale_fill_gradient2(low="white", mid="grey", high="black", 
+                       midpoint=0.5, limits=range(melted_other$value)) +
+  ylab("") + xlab("") +
+  labs(fill = "Correlation") + 
+  theme_tufte(base_size = 12) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+print(ggplotgraph)
+
+dev.off()
+
+fileName <- paste0("plots/", filebase, other, "MeanCorrelation", ".png")
+png(filename = fileName, width = 640, height = 493)
+
+otherworksScore <- vector("numeric", length(otherworks))
+names(otherworksScore) <- otherworks
+for (i in 1:length(otherworks)) {
+  otherworksScore[otherworks[i]] <- mean(othermatrix[otherworks[i],]/45)
+}
+
+otherworksScore <- sort(otherworksScore, decreasing = F)
+names(otherworksScore) <- map_chr(names(otherworksScore), pullShortTitle)
+datNamedVec <- data.frame(work = names(otherworksScore), score = otherworksScore)
+datNamedVec$work <- factor(datNamedVec$work, levels = datNamedVec$work) 
+
+ggplotgraph <- ggplot(datNamedVec, aes(x=factor(work), weight=score)) + geom_bar() + coord_flip() +
+  ylab("Mean Correlation") + xlab(other) +
+  theme_tufte(base_size = 12)
+
+print(ggplotgraph)
+
+dev.off()
+
+
+fileName <- paste0("plots/", filebase, other, "MeanCorrelationLollipop", ".png")
+png(filename = fileName, width = 800, height = length(datNamedVec$work)*20)
+
+ggplot(datNamedVec, aes(score, factor(work), label = round(score, 2))) +
+  geom_segment(aes(x = 0, y = factor(work), xend = score, yend = factor(work))) +
+  geom_point() +
+  geom_text(nudge_x = 0.015) +
+  xlab("Mean Correlation") + ylab("Corpus Platonicum") +
+  xlim(0, 0.5) +
+  theme_tufte(base_size = 18)
+
+
+dev.off()
+
+fileName <- paste0("plots/", filebase, other, "CorrelationBggplot", ".png")
+png(filename = fileName, width = 640, height = 493)
+
+melted_other <- melt(corRaw)
+melted_other$value <- melted_other$value 
+#melted_other$Var1 <- gsub("tlg0059_", "", melted_other$Var1)
+#melted_other$Var2 <- gsub("tlg0059_", "", melted_other$Var2)
+melted_other$Var1 <- map_chr(melted_other$Var1, pullShortTitle)
+melted_other$Var2 <- map_chr(melted_other$Var2, pullShortTitle)
+
+ggplotgraph <- ggplot(melted_other , aes(x = Var1, y = Var2)) +
+  geom_raster(aes(fill = value)) +
+  scale_fill_gradient2(low="red", mid="white", high="blue", 
+                       midpoint=0, limits=range(melted_other$value)) +
+  ylab("") + xlab("") +
+  labs(fill = "Correlation") + 
+  theme_tufte(base_size = 12) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+print(ggplotgraph)
+
+dev.off()
+
+fileName <- paste0("plots/", filebase, other, "Dissimilarity", ".png")
+png(filename = fileName, width = 640, height = 493)
+
+dissimilarity <- 1 - abs(cor(othermatrix))
+rownames(dissimilarity) <- map_chr(rownames(dissimilarity), pullShortTitle)
+colnames(dissimilarity) <- map_chr(colnames(dissimilarity), pullShortTitle)
+distance <- as.dist(dissimilarity)
+labeldis <- paste0("Dissimilarity (1 - Abs(Correlation)), ", other)
+
+plot(hclust(distance), 
+     main=labeldis, xlab="")
+
+dev.off()
+
+
+###### Viz for PlatoFrequencies ####
 
 vizboxtest <- frequencies
 viztemp <- vizboxtest$feature
-platocol <- grep("tlg0059_", colnames(vizboxtest))
+platocol <- platoworks
 vizboxtest <- vizboxtest[,platocol]
 vizboxtest$feature <- NULL
 
@@ -704,7 +1013,8 @@ for (i in 1:length(vizboxtest[,1])) {
 }
 
 
-## for words mcolind has the length of 251
+## for words mcolind has the length of 294
+## for 4grams mcolind has the length of 345
 
 vizboxtest <- vizboxtest[mcolind,]
 viztemp <- viztemp[mcolind]
@@ -726,22 +1036,96 @@ vizboxtest <- t(vizboxtest)
 colnames(vizboxtest) <- viztemp
 vizboxtest <- data.frame(vizboxtest)
 
-fileName <- paste0("plots/", "FeatureFrequencyPlatoWord", ".png")
-png(filename = fileName, height=649, width=488)
+fileName <- paste0("plots/", filebase, "FeatureFrequencyPlato", ".png")
+png(filename = fileName, height=length(viztemp)*100, width=649)
 
 ggplot(stack(vizboxtest), aes(x = ind, y = values)) +
   xlab("Feature") + ylab("Frequency") +
-  geom_boxplot(outlier.size = 0.5) +
+  geom_tufteboxplot() +
   geom_point(data = data.frame(x = factor(names(menexfreqvec)), y = menexfreqvec),
              aes(x=x, y=y),
              color = 'red',
+             fill = 'red',
+             size = 1.5,
              shape = 25) +
   coord_flip() +
-  theme_tufte(base_size = 15)
+  theme_tufte(base_size = 22)
 
 dev.off()
 
-### Combine Tables
+
+###### Viz for RhetoricFrequencies
+
+vizboxtest <- frequencies
+viztemp <- vizboxtest$feature
+rhecol <- unique(c(demosthenesworks,lysiasworks,isocratesworks))
+vizboxtest <- vizboxtest[,rhecol]
+vizboxtest$feature <- NULL
+
+# reduce to only where menexenus is outlier
+
+mcol <- which(colnames(vizboxtest) == "tlg0059_tlg028")
+mcolind <- vector()
+count <- 0
+
+for (i in 1:length(vizboxtest[,1])) {
+  outliervalues <- boxplot.stats(as.numeric(vizboxtest[i,]))$out
+  for (j in 1:length(outliervalues)) {
+    candidates <- which(as.numeric(vizboxtest[i,]) == outliervalues[j])
+    for (k in 1:length(candidates)) {
+      if (length(candidates[k]) > 0) {
+        if (is.na(candidates[k]) == FALSE) {
+          if (mcol == candidates[k]) {
+            count <- count + 1
+            mcolind[count] <- i
+          }
+        }
+      }
+    }
+  }
+}
+
+## for words mcolind has the length of 336
+## for 4grams mcolind has the length of 343
+
+vizboxtest <- vizboxtest[mcolind,]
+viztemp <- viztemp[mcolind]
+
+rhesums <- vector()
+
+for (i in 1:length(vizboxtest[,1])) {
+  rhesums[i] <- sum(vizboxtest[i,]) / 36
+}
+
+# reduce to what occurs every 500 tokens (mean frequency 0.2)
+vizboxtest <- data.frame(vizboxtest)
+vizboxtest <- vizboxtest[which(rhesums >= 0.2),]
+viztemp <- viztemp[which(rhesums >= 0.2)]
+
+menexfreqvec <- vizboxtest$tlg0059_tlg028
+names(menexfreqvec) <- viztemp
+vizboxtest <- t(vizboxtest)
+colnames(vizboxtest) <- viztemp
+vizboxtest <- data.frame(vizboxtest)
+
+fileName <- paste0("plots/", filebase, "FeatureFrequencyRhetorics", ".png")
+png(filename = fileName, height=length(viztemp)*100, width=649)
+
+ggplot(stack(vizboxtest), aes(x = ind, y = values)) +
+  xlab("Feature") + ylab("Frequency") +
+  geom_tufteboxplot() +
+  geom_point(data = data.frame(x = factor(names(menexfreqvec)), y = menexfreqvec),
+             aes(x=x, y=y),
+             color = 'red',
+             fill = 'red',
+             size = 1.5,
+             shape = 25) +
+  coord_flip() +
+  theme_tufte(base_size = 22)
+
+dev.off()
+
+### Combine Tables ####
 
 measureTable <- fread("tables/MFWMeasureTable.csv")
 measureTable <- data.frame(measureTable)
@@ -765,6 +1149,8 @@ measureTable <- rbind(measureTable, temp)
 temp <- measureTable$V1
 measureTable$V1 <- NULL
 rownames(measureTable) <- temp
+
+scoremeasuretable <- measureTable
 
 fileName <- paste0("plots/", "AllMeasureBoxPlot", ".png")
 png(filename = fileName, width = 640, height = 493)
@@ -812,20 +1198,61 @@ temp <- measureTable$V1
 measureTable$V1 <- NULL
 rownames(measureTable) <- temp
 
+withPlatomeasuretable <- measureTable
+
+cells <- which(measureTable > 0)
+
 fileName <- paste0("plots/", "AllMenexenusWithPlatoPlot", ".png")
 png(filename = fileName, height=35*nrow(measureTable), width=150*ncol(measureTable))
-ggtexttable(measureTable, theme = ttheme(base_style = "minimal"))
+tab <- ggtexttable(measureTable, theme = ttheme(base_style = "minimal"))
+for (i in 1:length(cells)) {
+  rownumber <- cells[i]  + 1 - floor(cells[i] / length(measureTable$Euclidean)) * length(measureTable$Euclidean)
+  if (rownumber == 1) {
+    rownumber <- length(measureTable$Euclidean) + 1
+  }
+  colnumber <- ceiling(cells[i] / length(measureTable$Euclidean)) + 1
+  tab <- table_cell_font(tab, row = rownumber, column = colnumber, 
+                         face = "bold")
+  tab <- table_cell_bg(tab, row = rownumber, column = colnumber, linewidth = 0,
+                       fill="grey", color = "grey")
+}
+
+tab
 dev.off()
+
+fileName <- paste0("plots/", "AllMeasurePlot", ".png")
+png(filename = fileName, height=35*nrow(measureTable), width=150*ncol(measureTable))
+tab <- ggtexttable(scoremeasuretable, theme = ttheme(base_style = "minimal"))
+for (i in 1:length(cells)) {
+  rownumber <- cells[i]  + 1 - floor(cells[i] / length(measureTable$Euclidean)) * length(measureTable$Euclidean)
+  if (rownumber == 1) {
+    rownumber <- length(measureTable$Euclidean) + 1
+  }
+  colnumber <- ceiling(cells[i] / length(measureTable$Euclidean)) + 1
+  tab <- table_cell_font(tab, row = rownumber, column = colnumber, 
+                         face = "bold")
+  tab <- table_cell_bg(tab, row = rownumber, column = colnumber, linewidth = 0,
+                       fill="grey", color = "grey")
+}
+
+tab
+dev.off()
+
 
 fileName <- paste0("tables/", "AllMenexenusWithPlatoTable", ".csv")
 write.table(measureTable, file = fileName)
 
 
-# > 0, percWithPlato 11.56% of the tests (6.23 with just 1)
-# > 1, percWithPlato 5.33
-# = 7, percWithPlato only 1 instance, = 6 zero instances, 8 instances for 3,4,5
+# > 0; percWithPlato 10.67% of the tests (6.23 with just 1)
+# > 1; percWithPlato 4.89%
+# = 8,7; only 1 instance,
+# = 6,5; zero instances, 
+# = 4, 2 instances 
+# = 3, 3 instanes 
+# = 2, 4 instanes 
+# = 1, 13 instanes 
 
-percWithPlato <- length(which(as.matrix(measureTable) > 6)) / length(as.matrix(measureTable)) * 100
+percWithPlato <- length(which(as.matrix(measureTable) == 7)) / length(as.matrix(measureTable)) * 100
 percWithPlato <- round(percWithPlato, digits = 2)
 
 ###
@@ -856,5 +1283,90 @@ rownames(measureTable) <- temp
 fileName <- paste0("tables/", "AllMenexenusCluster", ".csv")
 write.table(measureTable, file = fileName)
 
+## test for καὶ in the Menexenus
+
+menexpas <- corpus2[grep("tlg0059.tlg028", corpus2$identifier),]
+speech <- vector()
+for(i in 1:46) {
+  if (i < 25 || i > 38) {
+    speech[i] <- "dialog"
+  } else {
+    speech[i] <- "speech"
+  }
+}
+menexpas$kind <- speech
+menextexts <-menexpas[, lapply(.SD, combineText), .SD = "text", by=kind]
+menextexts$wordcount <- sapply(menextexts$text, wordcount)
+
+menexdial <- sort(table(strsplit(menextexts$text[1], " ")), decreasing = T)
+menexspeech <- sort(table(strsplit(menextexts$text[2], " ")), decreasing = T)
+
+head(menexspeech, n = 20) / menextexts$wordcount[2]
+head(menexdial, n = 20) / menextexts$wordcount[1]
+
+swkraths <- corpus2[grep("swkraths", corpus2$identifier),]
+swkraths$Work <- sapply(swkraths$identifier, extractWork)
+swkrathsWork <-swkraths[, lapply(.SD, combineText), .SD = "text", by=Work]
+
+max_cores <- detectCores() - 1 # let's do everything a bit quicker, but leave one core for answering emails etc.
+registerDoParallel(cores = max_cores)
+
+swkrathsWork$text <- foreach(i = swkrathsWork$text, .combine = c) %dopar% deleteNonGreek(i) 
+swkrathsWork$wordcount <- foreach(i = swkrathsWork$text, .combine = c) %dopar% wordcount(i) 
+registerDoSEQ()
+
+
+checkkai <- function(x) {
+  sort(table(strsplit(swkrathsWork$text[x], " ")), decreasing = T)["καὶ"] / swkrathsWork$wordcount[x] * 100
+}
+
+checkde <- function(x) {
+  sort(table(strsplit(swkrathsWork$text[x], " ")), decreasing = T)["δὲ"] / swkrathsWork$wordcount[x] * 100
+}
+
+swkrathsWork$kaicount <- sapply(c(1:length(swkrathsWork$text)), checkkai)
+swkrathsWork <- swkrathsWork[-22,]
+swkrathsWork <- swkrathsWork[-23,]
+swkrathsWork <- swkrathsWork[-5,]
+
+swkrathsWork$Work[which(swkrathsWork$kaicount == boxplot.stats(swkrathsWork$kaicount)$out)]
+
+swkrathsWork$text <- NULL
+swkrathsWork$decount <- NULL
+swkrathsNames <- swkrathsWork$Work
+kaicount <- swkrathsWork$kaicount
+swkrathsNames <- gsub(".tkchs", "", swkrathsNames, fixed = T)
+names(kaicount) <- swkrathsNames
+kai.df <- data.frame(kaicount)
+kai.df <- stack(kai.df)
+kai.df$ind <- "καὶ"
+
+ggplot(kai.df, aes(x = ind, y = values)) +
+  xlab("Feature") + ylab("Frequency") +
+  geom_boxplot(outlier.size = 0.5) +
+  geom_point(data = data.frame(x = "καὶ", y = kai.df$values[20]),
+             aes(x=x, y=y),
+             color = 'red',
+             shape = 25) + 
+  coord_flip() +
+  theme_tufte(base_size = 15)
+
+
+fileName <- paste0("plots/", "SocratesKaiBox", ".png")
+png(filename = fileName, height=length(viztemp)*100, width=649)
+
+ggplot(kai.df, aes(x = ind, y = values)) +
+  xlab("Feature") + ylab("Frequency") +
+  geom_tufteboxplot() +
+  geom_point(data = data.frame(x = "καὶ", y = kai.df$values[20]),
+             aes(x=x, y=y),
+             color = 'red',
+             fill = 'red',
+             size = 1.5,
+             shape = 25) +
+  coord_flip() +
+  theme_tufte(base_size = 22)
+
+dev.off()
 
 
